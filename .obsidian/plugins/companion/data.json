@@ -1,0 +1,19 @@
+{
+  "provider": "ollama",
+  "model": "hf.co/nidum/Nidum-Llama-3.2-3B-Uncensored-GGUF:Q4_K_M",
+  "enable_by_default": true,
+  "keybind": "Tab",
+  "delay_ms": 3000,
+  "stream": true,
+  "accept": {
+    "splitter_regex": "\\.",
+    "display_splitter_regex": "[.?!:;]",
+    "completion_completeness_regex": ".*[^d]$",
+    "min_accept_length": 4,
+    "min_display_length": 50,
+    "retrigger_threshold": 128
+  },
+  "provider_settings": {},
+  "presets": [],
+  "fallback": null
+}

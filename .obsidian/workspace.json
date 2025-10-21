@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "e375e88764fe9243",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5fef599c5e9dec4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25e2b1c4cb9200ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "meetings/meeting2/Defining Our Approach.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Defining Our Approach"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d1b148824619af13",
+    "type": "split",
+    "children": [
+      {
+        "id": "b539261dd6bc19d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9dd59487e7bbd75",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "781e0b2228f4a7d5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3cc03c50ae73a716",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315.5086555480957
+  },
+  "right": {
+    "id": "6ecf81dfe0c5b13e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c99cc1d2d2d3f319",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6980f72cb3b065b1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Untitled"
+            }
+          },
+          {
+            "id": "c1ecba022bdbe88a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "a97d5a61cd7f9c39",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d331acff11150064",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          },
+          {
+            "id": "0988797fe01d122a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 405.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "companion:Toggle completion": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "25e2b1c4cb9200ac",
+  "lastOpenFiles": [
+    "meetings/meeting2/Kingston University 2.m4a",
+    "meetings/meeting2/audio/Kingston University 2.m4a",
+    "meetings/meeting2/audio",
+    "meetings/htmlextr.py",
+    "meetings/meeting2/Defining Our Approach.md",
+    "meetings/meeting1/Project Overview.md",
+    "referance docuemnts/text.md",
+    "referance docuemnts/Guidance Document Assignment A part B.pdf",
+    "referance docuemnts/Assignment 2 EG5016B_canvas.pdf",
+    "referance docuemnts/Assignment 1 EG5016B_canvas-1.pdf",
+    "research/Poster_Presentation_outline.pdf",
+    "EG5016B Module Summary.md",
+    "research/Poster_Presentation_outline.synctex(busy)",
+    "companies/Supercritical/Assembly and Maintenance Frame.md",
+    "companies/Supercritical/Supercritical.pdf",
+    "companies/Supercritical/Super_Critical.png",
+    "meetings/meeting1/audio/Kingston University.m4a",
+    "Live Breifs Summary.md",
+    "companies/WOW_STUFF/Family Board Game.md",
+    "companies/WOW_STUFF/WOW_Stuff.png",
+    "Excalidraw/Drawing 2025-10-10 12.07.59.excalidraw.md",
+    "Excalidraw/Drawing 2025-10-19 21.11.35.excalidraw.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Drawing 2025-10-19 21.11.35.excalidraw.png",
+    "Pasted Image 20251019211518_435.png",
+    "home/sak/Documents/project_management/referance.md",
+    "2025-10-13.md",
+    "companies/Siemens/Siemens_Logo.png",
+    "companies/Siemens/Anti-condensation Outdoor Enclosure.md",
+    "companies/Red_Bull_Powertrains/2/Conceptual Valvetrain Optimisation.md",
+    "companies/Red_Bull_Powertrains/1/Intake and Exhaust System.md",
+    "companies/Red_Bull_Powertrains/RedBull.png",
+    "companies/Omega_Dot_Ltd/Omega_Dot.png",
+    "companies/Omega_Dot_Ltd/Coefficient of Friction Measurement Device.md",
+    "companies/GB_Sol_&_Octopus_Energy/Octopus_Energy.png",
+    "companies/GB_Sol_&_Octopus_Energy/GB_Sol.png",
+    "companies/GB_Sol_&_Octopus_Energy/Floating Solar Design.md",
+    "companies/GB_Sol_/2/Cooling system for EV battery packs.md",
+    "companies/GB_Sol_/1/AI-Guided Adaptive Car Seat.md",
+    "companies/GB_Sol_/JLR.png",
+    "Supercritical/Assembly and Maintenance Frame.md",
+    "Jaguar_Land_Rover/2/Cooling system for EV battery packs.md",
+    "GB_Sol_&_Octopus_Energy/Floating Solar Design.md",
+    "Jaguar_Land_Rover/1/AI-Guided Adaptive Car Seat.md",
+    "Omega_Dot_Ltd/Coefficient of Friction Measurement Device.md"
+  ]
+}

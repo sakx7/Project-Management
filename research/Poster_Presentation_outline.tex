@@ -1,0 +1,652 @@
+\documentclass{report}
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{arydshln}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage{changepage}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{lipsum}
+\usepackage[most]{tcolorbox}
+\definecolor{light-gray}{gray}{0.9}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+\usepackage{subcaption}
+
+\usepackage{parskip}
+\usepackage{times}
+%\usepackage{mathpazo}
+%\usepackage{tgtermes}
+
+\DeclareSIUnit{\atm}{atm}
+
+\usepackage{tabularx}
+\usepackage{amsmath, amssymb, amscd, MnSymbol, mathrsfs}
+\usepackage{cellspace}
+\usepackage{tikz}
+\usetikzlibrary{calc,3d, patterns, angles, quotes, decorations.markings, decorations.pathmorphing, hobby}
+\usepackage{xfrac}
+
+\usepackage{chemfig}
+\usepackage{caption}
+\usepackage{bm}
+
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+
+\usepackage{empheq}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{xstring}
+
+\pgfplotsset{compat=1.18}
+
+
+\usepackage[european,americanvoltages,americanresistors,cuteinductors,fetbodydiode]{circuitikz}
+\usetikzlibrary{circuits.logic.US}
+\usepackage{siunitx}
+\usetikzlibrary{arrows,shapes,calc, positioning, patterns, decorations, decorations.markings}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
+%\ctikzset{bipoles/thickness=1}
+%\tikzstyle{every node}=[font=\small]
+%\tikzstyle{every path}=[line width=0.8pt,line cap=round,line join=round]
+
+\def\CalcC#1{%
+	\coordinate (base) at (#1.base);
+	\coordinate (collector) at (#1.collector);
+	\coordinate (emitter) at (#1.emitter);
+	\draw (barycentric cs:base=0.5,collector=0.5,emitter=0.5) circle [radius=14pt];
+}
+
+\usepackage{tikz-3dplot}
+\usepackage{textcomp}
+% Custom commands
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+%\usetikzlibrary{external}
+%\tikzexternalize[prefix=figures/]
+
+\newcommand\myfrac[2]{\sfrac{#1\mkern-1.2mu}{#2}}
+\usepackage{xcolor}
+
+% Define custom colors
+\definecolor{darkblue}{rgb}{0.1,0.1,0.5} %  dark blue shade
+\definecolor{formalshade}{rgb}{0.95,0.95,1} % light blue shade for the background
+
+% For the adjustwidth environment
+\PassOptionsToPackage{strict}{changepage}
+\usepackage{changepage}
+
+% For formal definitions
+
+\usepackage{framed}
+\newcommand{\formalsource}{}
+
+\newenvironment{formal}[3][]{	\renewcommand{\formalsource}{#1}
+	\def\lefty{\color{#2}\textquotedblleft}
+	\def\righty{\color{#2}\textquotedblright}
+	\def\FrameCommand{%
+		\hspace{1pt}%
+		{\color{#2}\vrule width 2pt}%
+		{\color{#3}\vrule width 4pt}%
+		\colorbox{#3}%
+	}%
+	\MakeFramed{\advance\hsize-\width\FrameRestore}%
+	\begin{adjustwidth}{5pt}{7pt}%
+		\vspace{4pt}%
+		\ifx#2\empty\else\smash{\raisebox{-0.5em}{\huge\lefty}}\hspace{0em}\fi%
+	}{%
+		\hspace{0em}\smash{\raisebox{-0.5em}{\huge\righty}}\\%
+		\vspace{0pt}%
+		\ifx\formalsource\empty\else\hfill{\footnotesize\textit{\formalsource}}\fi%
+	\end{adjustwidth}%
+	\endMakeFramed%
+	\noindent%
+}
+
+
+% Custom itemize list with images for positive and negative items
+\newlist{gitemize}{itemize}{1} % Just one level for the list
+\setlist[gitemize,1]{
+	leftmargin=2.8em, % Adjust the margin for the list
+	labelsep=1em % Control the space between the label and the list item
+}
+
+\newcommand{\checkitem}{\raisebox{-0.25\height}{\includegraphics[width=0.4cm]{checkmark.png}}}
+\newcommand{\crossitem}{\raisebox{-0.25\height}{\includegraphics[width=0.4cm]{cross.png}}}
+
+
+\usepackage[left=0.8in,right=0.8in,top=0.5in,bottom=0.5in,includeheadfoot,letterpaper]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{varwidth} 
+
+\usepackage{mathtools}
+\usepackage{scalerel}
+%\usepackage{showframe}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+%\fancyhead[L]{\leftmark}
+\fancyhead[R]{Page \thepage}
+\setlength{\headheight}{30pt}
+\setlength{\footskip}{20pt}
+
+%\fancypagestyle{plain}{
+	%    \fancyhf{} % Clear all header and footer fields for plain style
+	%    \fancyhead[L]{\includegraphics[height=1.2cm]{images/Kingston_University_London_logo_200-tablet.png}} % Left header
+	%    \fancyhead[R]{EG4019 - ME - Engineering Mechanics and Materials} % Right header
+	%    \fancyfoot[C]{Department of Mechanical Engineering} % Center footer
+	%    \fancyfoot[R]{\thepage} % Right footer (page number)
+	%}
+
+
+
+\newcommand{\wm}[2]{%
+	\begin{minipage}{#1\textwidth}
+		#2
+	\end{minipage}%
+}
+
+
+\usepackage{scalerel}
+
+
+
+\usepackage[export]{adjustbox}
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{}
+\renewcommand{\contentsname}{}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\setlength{\cftbeforesecskip}{0.5em}
+
+
+
+\usepackage{hyperref}    % For hyperlinks
+\usepackage{xurl}        % For better URL handling
+\hypersetup{
+	colorlinks=true,
+	linkcolor=cyan!80!black,
+	urlcolor=cyan!80!black,
+	citecolor=cyan!80!black
+}
+
+
+
+\definecolor{ChineseGold}{HTML}{C59401}
+\definecolor{AmericanGold}{HTML}{D3AF37}
+\definecolor{MetallicSunburst}{HTML}{A77C37}
+\definecolor{GoldenBrown}{HTML}{996515}
+\definecolor{DarkBrown}{HTML}{674222}
+\definecolor{SkyBlue}{HTML}{87CEEB}      % Soft and bright
+\definecolor{BabyBlue}{HTML}{89CFF0}     % Gentle, pastel-like
+\definecolor{SteelBlue}{HTML}{4682B4}    % Rich but not overpowering
+\definecolor{RoyalBlue}{HTML}{4169E1}    % Strong, slightly purplish
+\definecolor{MidnightBlue}{HTML}{191970} % Almost black, deep navy
+\definecolor{PrussianBlue}{HTML}{003153} % Very deep blue with a classic look
+\definecolor{mainblue}{HTML}{1D73BE}
+
+\usepackage{listings}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{white!97!gray},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{purple},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{orange},
+	basicstyle=\ttfamily\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%Refer to the equation as \eqref{equation}.
+\usepackage{caption}  % This package allows captioning outside of a float
+\usepackage[export]{adjustbox}
+
+
+\usetikzlibrary{patterns}
+
+\usetikzlibrary{patterns.meta}
+\usepackage[para]{footmisc} % Example of making footnotes run together in a paragraph
+
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+\usepackage{datetime}
+
+\usepackage{etoolbox}
+\AfterEndEnvironment{landscape}{\clearpage\restoregeometry}
+
+\makeatletter
+\def\tagform@#1{\maketag@@@{{Eq.~#1}}} 
+\makeatother
+\usepackage{enumerate}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage{datenumber}
+
+\usepackage{physics}
+\usepackage[outline]{contour}
+\usepackage{shapepar,transparent}
+\usetikzlibrary{patterns,decorations.pathmorphing}
+\usetikzlibrary{arrows.meta}
+\tikzset{>=latex}
+\contourlength{1.1pt}
+
+\colorlet{mydarkblue}{blue!50!black}
+\colorlet{myred}{red!65!black}
+\colorlet{watercol}{blue!80!cyan!10!white}
+\colorlet{darkwatercol}{blue!80!cyan!20!white}
+\tikzstyle{piston}=[blue!50!black,top color=blue!30,bottom color=blue!50,middle color=blue!20,shading angle=0]
+\tikzstyle{water}=[draw=mydarkblue,top color=watercol!90,bottom color=watercol!90!black,shading angle=5]
+\tikzstyle{vertical water}=[water,
+top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=watercol!80,shading angle=90]
+\def\tick#1#2{\draw[thick] (#1)++(#2:0.1) --++ (#2-180:0.2)}
+
+
+
+
+% ====== DEADLINE SETUP ======
+\newcounter{deadlineyear}\setcounter{deadlineyear}{2025}
+\newcounter{deadlinemonth}\setcounter{deadlinemonth}{12} % December
+\newcounter{deadlineday}\setcounter{deadlineday}{15}
+\newcounter{deadlinetime}\setcounter{deadlinetime}{0} % Will be set via macro
+
+% ====== OTHER COUNTERS ======
+\newcounter{mydatenumber}
+\newcounter{currentdate}
+\newcounter{daysdiff}
+\newcounter{currenttime}
+\newcounter{totalminutes}
+\newcounter{displaydays}
+\newcounter{remainingmins}
+\newcounter{displayhours}
+\newcounter{displaymins}
+
+% ====== MACROS ======
+% Set deadline time (HH, MM)
+\newcommand{\setdeadlinetime}[2]{%
+	\setcounter{deadlinetime}{\numexpr #1*60 + #2\relax}%
+}
+
+% ====== MAIN COMMAND ======
+\newcommand{\timeUntilDeadline}{%
+	% Calculate date difference
+	\setmydatenumber{mydatenumber}{\value{deadlineyear}}{\value{deadlinemonth}}{\value{deadlineday}}%
+	\setmydatenumber{currentdate}{\year}{\month}{\day}%
+	\setcounter{daysdiff}{\numexpr\value{mydatenumber} - \value{currentdate}\relax}%
+	% Current time (in minutes since midnight)
+	\setcounter{currenttime}{\time}%
+	% Total minutes until deadline
+	\setcounter{totalminutes}{\numexpr\value{daysdiff}*1440 + \value{deadlinetime} - \value{currenttime}\relax}%
+	% Display result
+	\ifnum\value{totalminutes}<0
+	\textbf{\color{red}Deadline passed!}%
+	\else
+	% Breakdown
+	\setcounter{displaydays}{\numexpr\value{totalminutes}/1440\relax}%
+	\setcounter{remainingmins}{\numexpr\value{totalminutes}-\value{displaydays}*1440\relax}%
+	\setcounter{displayhours}{\numexpr\value{remainingmins}/60\relax}%
+	\setcounter{displaymins}{\numexpr\value{remainingmins}-\value{displayhours}*60\relax}%
+	% Output
+	{%
+		\ifnum\value{displaydays}>0
+		\thedisplaydays\ day\ifnum\value{displaydays}>1 s\fi%
+		\ifnum\value{displayhours}>0\ and \fi%
+		\fi%
+		\ifnum\value{displayhours}>0
+		\thedisplayhours\ hour\ifnum\value{displayhours}>1 s\fi%
+		\ifnum\value{displaymins}>0\ and \fi%
+		\fi%
+		\ifnum\value{displaymins}>0
+		\thedisplaymins\ minute\ifnum\value{displaymins}>1 s\fi%
+		\fi
+		}%
+	\fi
+}
+
+
+
+\definecolor{mygreen}{HTML}{07a56d}
+
+\newtcbtheorem{briefillus}{Definiton}{
+	enhanced,
+	sharp corners,
+	attach boxed title to top left={
+		xshift=0pt, 
+		yshift=-\tcboxedtitleheight, 
+		yshifttext=-\tcboxedtitleheight/2-0.5em
+	},
+	colback=white,
+	colframe=black,
+	fonttitle=\bfseries,
+	coltitle=white,
+	boxed title style={
+		rounded corners,
+		arc=2pt,
+		size=small,
+		colback=black,
+		colframe=black,
+	},
+	leftrule=0pt, 
+	rightrule=0pt, 
+}{thm}
+
+
+
+\usepackage{titlesec}
+
+
+\renewcommand{\thechapter}{\bfseries\Alph{chapter}} 
+\renewcommand{\chaptername}{\bfseries Part} 
+
+\titleformat{\chapter}[block]{\Huge\raggedright}{\chaptername\;\thechapter\\[0.5em]}{0pt}{\Huge\raggedright}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\titleformat{\section}[block]{\bfseries\raggedright}{\thesection}{0.5em}{}
+\titleformat{\subsection}[block]{\raggedright}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}[block]{\bfseries\raggedright}{\thesubsubsection}{0.5em}{}
+
+
+
+\def\customhrule{\hrule\vspace{1em}\noindent}
+
+%\usepackage{darkmode}
+%\enabledarkmode
+
+
+\begin{document}
+	\thispagestyle{empty}
+	\centering
+	\huge
+	Conceptual frame for a large-scale electrolyser vessel\\[0.8em]
+	\normalsize %\textit{Application for aiding vertical motion}\\	
+\large
+Sakariye Abiikar$^{\hyperlink{affilA}{\text{a}},\hyperlink{corresp}{\dagger}}$%
+\begingroup
+\renewcommand
+\thefootnote{}\footnotetext{%
+	\hypertarget{corresp}{}% target for dagger
+	\textsuperscript{\footnotesize\dagger}\kern0.3em Corresponding author.\\
+	\wm{0.6}{\vspace{0.5em}\hspace{1.6em}\textit{E-mail address:} \;\href{mailto:k2371673@kingston.ac.uk}{k2371673@kingston.ac.uk} (S. Abiikar).}
+} 
+\addtocounter{footnote}{-1}
+\endgroup
+\kern-0.4em, Freddie Varley$^{\hyperlink{affilA}{\text{a}}}$, 
+Alishahi Alireza$^{\hyperlink{affilA}{\text{a}}}$, 
+Ihsan Muhammad Humayon$^{\hyperlink{affilA}{\text{a}}}$, \\
+Sangireddy Vrishin R$^{\hyperlink{affilA}{\text{a}}}$ \\[0.4em]
+\small
+\hypertarget{affilA}{\textsuperscript{a}\,\textit{Department of Mechanical Engineering, Kingston University, London, UK}}\\[0.6em]
+	\footnotesize
+	Deadline: Monday 15$^{\text{th}}$ December, 2025 [23:59], Last Updated: \today \,[\currenttime],\\ Days left until deadline: \timeUntilDeadline.\\
+	\normalsize
+	\raggedright
+	\vspace{3em}
+	\hrule	\vspace{-0.1em}
+\section*{Abstract}\vspace{-0.4em}
+\hspace{1em}This report presents the development of an {assembly and maintenance frame} for Supercritical Solutions' large-scale electrolyser vessel. The project uses the {DMAIC framework} to guide systematic problem definition, measurement, analysis, improvement, and control. Design concepts are generated, evaluated, and optimized to satisfy technical, operational, and sustainability requirements, while integrating stakeholder and customer needs through tools such as the {Voice of the Customer (VoC)} and {Objective Tree Diagram (OTD)}. Risk management, including {DFMEA}, and quality control measures are applied to ensure a robust, safe, and practical solution. The report documents methodology, key design decisions, and professional competencies developed.\\[2em]
+\hrule
+\section{Introduction}
+Electrolysers play a critical role in industrial hydrogen production, requiring {robust support structures} for safe and efficient operation. Designing assembly and maintenance frames for large-scale vessels presents challenges including structural integrity, accessibility, maintenance, and long-term reliability.\\[0.8em]
+This project focuses on developing an assembly and maintenance frame for Supercritical Solutions’ electrolyser vessel, applying {systems thinking} and the \textbf{DMAIC methodology}. Stakeholder and customer requirements are captured using \textbf{VoC} and \textbf{OTD}, while design evaluation uses tools such as \textbf{QFD} and concept trade-off analysis. Risk assessment via \textbf{DFMEA} and quality planning ensure compliance with technical, operational, and sustainability standards. 
+
+The report outlines project methodology, key engineering decisions, and rationale behind the chosen solution, highlighting professional skills developed including {project management}, {teamwork}, {critical thinking}, and {problem-solving}.
+
+\newpage
+\section{Define (D)}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Customer and Stakeholder Requirements}: List functional requirements (load support, accessibility, safety, ergonomics) using \textbf{VoC}.
+	\item \textbf{Project Objectives}: Include \textbf{OTD} showing link from high-level goals to design targets.
+	\item \textbf{Constraints and Specifications}: Material, dimensional, regulatory, cost, and sustainability requirements.
+\end{itemize}
+\color{black}
+
+\subsection{Industry Live Brief Breakdown}
+
+\begin{minipage}{0.58\textwidth}
+The live brief provided by \textbf{Supercritical Solutions Ltd} defines the project as:
+\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+	Designing an assembly and maintenance frame for Supercritical’s large-scale electrolyser vessel.
+\end{formal}
+This statement establishes the project’s core intent — to create a support and handling system for a critical industrial component. Implicit within this is the need for mechanical stability, safety in operation, and consideration of human and environmental factors.
+\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+	This project focuses on developing a conceptual assembly and maintenance frame for a large-scale electrolyser module. The outer vessel houses several internal sub-units (“black boxes”), designed for efficient replacement, inspection, and servicing.
+\end{formal}
+\end{minipage}\hfill
+\begin{minipage}{0.4\textwidth}
+    \includegraphics[width=0.9\linewidth, trim=10pt 5pt 10pt 5pt, clip]{../../../Pictures/Screenshots/swappy-20251019-211642}
+    \captionof{figure}{Zaarour, 2025, p.1,2}
+\end{minipage}\\[1em]
+This section of the brief introduces the system’s architecture, a primary vessel containing replaceable “black box” modules. From this, it becomes clear that modularity and maintainability are central design requirements. The frame must therefore facilitate the lifting, positioning, and removal of these sub-units without damaging components or disrupting alignment.
+\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+	At a high level, the process involves securing the vessel, lifting and positioning the internal units, and enabling disassembly without compromising safety, alignment, or component integrity. A conceptual frame will be proposed to support this process.
+\end{formal}
+Here, the operational workflow is defined. The frame must perform under heavy loads, maintain precise alignment, and allow repeatable assembly and disassembly. This introduces key engineering considerations such as load path design, lifting safety, and tolerance management. It also frames the system as one that supports \textbf{both assembly and maintenance}, implying a dual-purpose design philosophy.
+\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+	The frame design prioritises \textit{ergonomics}, ensuring operators can safely access and manipulate heavy components while reducing manual strain. Safety features, such as interlocks and shielding, will mitigate risks during lifting and positioning. Automation elements—like guided lifting systems or robotic assistance—will improve repeatability, reduce error, and shorten turnaround time during both assembly and maintenance cycles.
+\end{formal}
+This passage adds a human and process-oriented layer. The focus shifts from mechanical function to \textbf{operator safety, efficiency, and automation}. Ergonomics becomes a measurable design driver, suggesting the integration of human factors engineering. Automation hints at the use of advanced control systems or assistive mechanisms, raising new requirements for precision, reliability, and system integration.
+\begin{formal}[Zaarour, 2025, p. 2]{black}{white}
+	The project plan will include mapping of assembly/disassembly workflows, conceptual frame design, and an evaluation of tooling requirements. Risks to address include component misalignment, equipment handling hazards, and delays from non-standardised interfaces. Quality considerations will centre on ensuring precision fits, traceability of maintenance activities, and robustness of the rig to repeated use.
+\end{formal}
+This section formalises the project management expectations. It highlights risk-based thinking and introduces the need for workflow mapping — key aspects of the DMAIC and systems engineering approaches. The emphasis on quality, traceability, and standardisation implies that the solution must not only perform mechanically but also fit within broader operational and maintenance systems.
+
+\begin{formal}[Zaarour, 2025, p. 2]{black}{white}
+	The outer vessel measures 870 mm internal diameter × 3000 mm internal height (1100 mm OD × 3500 mm total height) and weighs 13 tons. Housed within the vessel are internal sub-units, collectively forming a “black box” assembly measuring 550 × 550 × 2000 mm in height, with a combined weight of 3 tons. These sub-units are attached to the vessel lid, and must be safely lifted, positioned, and removed during assembly and maintenance cycles.
+\end{formal}
+
+Finally, this portion of the brief defines the scale of the engineering problem. The component weights and dimensions directly inform material selection, structural design, and lifting mechanism specifications. It establishes performance baselines that shape load calculations, safety factors, and ergonomics constraints.
+
+\subsection{Summary}
+The live brief progressively defines both the technical and managerial scope of the project. It begins with the conceptual aim, introduces the modular system context, and culminates in quantifiable design constraints. From this breakdown, several key themes emerge:
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Structural integrity and precision} are critical due to the vessel’s mass and geometry.
+	\item \textbf{Ergonomics and safety} drive accessibility and risk mitigation.
+	\item \textbf{Automation and repeatability} offer opportunities for process efficiency.
+	\item \textbf{Quality and traceability} link design to long-term maintainability.	
+\end{itemize}
+Together, these insights establish a foundation for the project’s structured DMAIC approach, ensuring that design, risk, and quality objectives align with the industrial requirements outlined by Supercritical Solutions.
+
+
+
+\newpage
+
+\section{Measure (M)}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Existing System Analysis}: Identify limitations in current supports/frames.
+	\item \textbf{Structural and Operational Data}: Vessel dimensions, weight, centre of mass, lifting points.
+	\item \textbf{SWOT Analysis}: Strengths, weaknesses, opportunities, and threats of current design.
+\end{itemize}
+\color{black}
+\newpage
+
+\section{Analyse (A)}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Concept Generation}: Brainstorm frame geometries, assembly approaches, and maintenance access strategies.
+	\item \textbf{Concept Selection}: Use \textbf{Pugh Matrix} and evaluate trade-offs (cost vs. performance vs. safety).
+	\item \textbf{Risk Assessment}: DFMEA of potential failure modes in assembly, lifting, and operation.
+	\item \textbf{Design Calculations}: Structural analysis (stress, deflection, factor of safety), material selection.
+\end{itemize}
+\color{black}
+\newpage
+
+\section{Improve (I)}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Final Design Concept}: Detailed drawings, CAD models, and key dimensions.
+	\item \textbf{Optimization}: Geometry adjustments for weight reduction, improved access, cost efficiency.
+	\item \textbf{Quality Control Measures}: Checkpoints for fabrication and assembly; integration of PDCA cycle.
+\end{itemize}
+\color{black}
+
+\newpage
+
+\section{Control (C)}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item \textbf{Implementation Plan}: Stepwise assembly and maintenance protocols.
+	\item \textbf{Final Risk Mitigation}: Address critical DFMEA items.
+	\item \textbf{Sustainability and Lifecycle}: Material recyclability, maintenance requirements, durability.
+	\item \textbf{Verification}: Ensure design meets technical, operational, and stakeholder requirements.
+\end{itemize}
+\color{black}
+
+\newpage
+
+\section{Conclusion}
+\color{red!50!black}
+Summarize how the frame meets functional, safety, and sustainability goals. Highlight trade-offs, engineering analysis applied, and design optimization. Reflect on professional skills developed: problem-solving, teamwork, and project management.
+\color{black}
+
+\newpage
+
+\section{Appendices}
+\color{red!50!black}
+\begin{itemize}[itemsep=-1mm]
+	\item Supporting calculations, sketches, CAD screenshots.
+	\item DFMEA table.
+	\item OTD and QFD diagrams.
+	\item Meeting minutes and stakeholder feedback.
+\end{itemize}
+\color{black}
+
+%\newpage\pagenumbering{gobble}
+%\chapter{Project Scope and Goals}
+%\newpage\pagenumbering{arabic}\setcounter{page}{1}
+
+\newpage
+
+\subsection*{Reference}
+Zaarour, A. (2025). \textit{Industry Live Brief: Designing an assembly and maintenance frame for Supercritical's large-scale electrolyser vessel} [PDF]. EG5016B – Exploring Engineering Project Management. Kingston University London.
+
+\url{https://knowledgebase.nexpcb.com/articles/assembly-types-and-levels/}
+\url{https://en.wikipedia.org/wiki/Maintenance}
+
+
+\end{document}
+
+
+\newpage\pagenumbering{gobble}
+\chapter{Design Development}
+\newpage\pagenumbering{arabic}\setcounter{page}{\numexpr\thepage+1}
+
+empty
+
+\newpage\pagenumbering{gobble}
+\chapter{Finalized Design}
+\newpage\pagenumbering{arabic}\setcounter{page}{\numexpr\thepage+1}
+
+\section{Main Concept Overview}
+\subsection{Concept Summary}
+Present a clear, concise description of your final design concept, outlining its primary function, key innovation, and intended user benefit.
+
+\subsection{Reverse Engineering Pathway}
+Include a visual flowchart showing the systematic development process. Clearly map how each tool (VoC, OTD, HoQ) contributed to specific design decisions and the final concept.
+
+\section{Voice of the Customer (VoC)}
+\subsection{Insights from Questionnaire}
+Present 3-4 key insights derived from customer questionnaire responses that directly shaped your understanding of customer needs.
+
+\subsection{Summary of Needs}
+Briefly summarise the primary customer needs identified from the VoC analysis that directly influenced your design concept.
+
+\section{Objective Tree Diagram (OTD)}
+\subsection{Key Objectives}
+Display 3-4 main objectives from your OTD that guided the design development.
+
+\subsection{Visual Representation}
+Include a simplified version of your OTD showing how these objectives link hierarchically to your final concept.
+
+\section{House of Quality (HoQ)}
+\subsection{Highlighted Requirements}
+Present 3 key customer requirements and 5 corresponding functional requirements that were most critical in shaping your design.
+
+\subsection{Design Integration}
+Explain how each highlighted requirement influenced specific aspects of your final design concept.\\
+\newpage
+
+\section{Systems Engineering Integration}
+\subsection{Holistic Approach}
+Describe how you applied Systems Engineering principles to ensure all project elements worked together as a cohesive system.
+
+\subsection{Customer and Stakeholder Needs}
+Explain how Systems Engineering helped you address both customer and stakeholder needs throughout the design process.
+
+\subsection{Interdependencies}
+Briefly discuss how you considered and managed interdependencies between different components of your concept.
+
+\section{Design for X (DfX)}
+\subsection{Factor Focus Area}
+Select and state one DfX factor (e.g., Design for Manufacturability or Sustainability) that significantly impacted your design.
+
+\subsection{Explanation}
+Describe how this DfX factor influenced specific design choices to enhance functionality, manufacturability, or sustainability.
+
+\section{Hypothesised Failures (DFMEA)}
+\subsection{Potential Failures}
+Identify 1-2 main failure modes anticipated in your DFMEA analysis.
+
+\subsection{Preventative Actions}
+Summarise the specific mitigations implemented in your design to address these potential failures.
+
+
+	\newpage
+	
+	
+%	\newpage\pagenumbering{gobble}
+%	\noindent	
+%	\huge Table of Contents\\
+%	\normalsize
+%	{
+%		\hypersetup{linkcolor=black}
+%		\tableofcontents
+%	}    	
+%	\thispagestyle{empty}
+%	{
+%		\hypersetup{linkcolor=black}
+%		\pagenumbering{gobble}
+%		\tableofcontents
+%	}    
+%	\newpage\newgeometry{left=0.8in,right=0.8in,top=1in,bottom=0.3in}
+%	\noindent\pagenumbering{arabic}\setcounter{page}{1}
+
+
+	
+	
+
+
+
+	
+\end{document}

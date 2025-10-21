@@ -1,0 +1,278 @@
+Speaker 1 All right, this is, uh, meeting two of the project management. I'll put the slides on here. Like, do, do you want to turn, like, the lighting in this room? Like, how do you think it is? Like, what would you say the lighting's like here?
+Speaker 2 Yeah. It's good. I mean, I-
+Speaker 1 You think, you think that it's good?
+Speaker 2 Yeah.
+Speaker 1 Uh, today the goal mainly is... Last time what we did was, we were understanding, uh, what, what the problem is, right? And today we're defining our approach to the problem, all right? Uh, also an extra part is, you know how we have a meeting on Friday? We need to, like, uh, conjure some, like, you know, ask some questions, 'cause like, can't just hop to the meeting without anything to say to them, right?
+Speaker 3 Yeah, it was questions, talking points, and-
+Speaker 1 But we'll just, at the end of this meeting, we will, like, discuss some stuff about that. (sighs) Okay, so we defined team approach. Yeah, also I started a document on the... It's, it's kind of like a log book, like a journey kind of thing, you know, just s- from the beginning to the end. If-
+Speaker 3 Uh, what was it for?
+Speaker 1 Pardon? Pardon, say that again? What was what called?
+Speaker 3 Well, have you shared it, yes or no?
+Speaker 1 No, no, I have not shared it yet, but I will share i- very soon. I just need to clean up a little bit. I can show you a brief, uh, brief how I started, but for... I'm just letting you know, we, we all gotta... We gotta make a... It's not actually... I don't think it's due with the stuff, the... Like, it's not... I- you can't submit it, 'cause they're only asking us for a final poster-
+Speaker 3 Yeah.
+Speaker 1 ... and then, uh, obviously individual, uh, report. But the thing is, if we want to make that poster, right, we need to have some kind of basis. Like, we need to build... We need to, like, get some information and then put it on the poster. Can't just make a final poster out of thin air, right? We need to... We need, we need materials. And that's true. We'll need to have an individual part, like- Yeah, yeah. That, that is what I'm making this document about.
+Speaker 3 Okay.
+Speaker 1 It's very weird that they never asked for this document. Yeah. But it's obvious that it needs to exist, right? Yeah. And I, I just started off the... Just to, just to write it, uh, just make it exist, I sup-
+Speaker 3 Just share it whenever you have time.
+Speaker 1 Yeah, I will share it very soon. Very soon. It's coming. It's coming this week.
+Speaker 3 If you've got time, right?
+Speaker 2 That must be, like, a log book then, but yeah.
+Speaker 1 We, we have time. Yeah. Yeah, yeah. It's going to, it's gonna serve as a lot of things.
+Speaker 3 Yeah.
+Speaker 1 It's gonna serve as a log book, as a documentation, as, as the basis for the poster. It's, it's the main paper, basically.
+Speaker 3 Yeah, so anything that might be useful to-
+Speaker 2 Yeah. I mean, it means that when we're making the poster, it's quite easy to go back and find what we need. <|agent|><|en|>
+Speaker 1 It'll be... Yeah, it'll be built, it'll be built off that. Yeah, basically.
+Speaker 3 Um, yeah.
+Speaker 1 So, uh, yeah. I... You guys might be worried about, like, assigning roles and stuff, like, but y- my point is, you'll likely get a role, but it's not something that... We can't all be doing something simultaneously, right? Of course, you know how, um, every, throughout the weeks, right, we're gonna get new stages throughout our project, right? So for example, like, throughout the l- uh, last stages, you, there's gonna be some CAD responsibility. Then your time will come. So even if I do as- give you assignment, like, uh, if I g- assign you roles right now, it's not that you could do it right now. Like, you would have to wait. My problem is, I don't want to put everything on you. Yeah, I know. I know. You guys will get roles, but- Because I know you lot are going on- What do you call it? What do you call it? Uh, the... What do you call the progress report, like, the... When you log progress? The, the thing we did for the last project, what was it called?
+Speaker 3 Oh, the Gantt chart.
+Speaker 1 Yeah. The Gant-
+Speaker 2 The Gantt chart, yeah.
+Speaker 1 The Gantt chart. Yeah. We'll get... We'll make Gantt chart soon. And then at the end, uh, we'll do customer queries for that Friday meeting. Now, this is, this... I, I read the two, the two, um... You know the documentation?
+Speaker 3 Yeah.
+Speaker 1 To do with the, the, the project? The, it's... They gave three documentations. One was the assignment, uh, assignment for brief one, assignment brief two, and then the third one was the guidance. So I'm... We're not gonna do assignment two, 'cause that's just the individual thing, like... Yeah. But the main ones I read was assignment one and the guidance brief. And then this was the main things that they, they said on it. So in our log book, we... This is gonna be the structure of... From today all the way to the end, right? For example, this is gonna be, like, first few weeks, there's... Following weeks, and then, you know, this is how we will go throughout. We first... We've, we've, we've started off a little bit with the first bit. We defined it, even last-
+Speaker 3 Yeah.
+Speaker 1 ... meeting we did the, did a little defining. Now I'm just writing up about it a little bit. Then after that, we do some measuring. This is the part where I can assign roles, yeah. We can, we can... I, for example, I can give you the analyze part, I can give you the improve part, I can give you the qui... This is the, the main, this is the main structure of the, of the report. Can I just ask, where is the other guy? He's, he's not coming in today. He messaged me. Okay. But don't worry. That's all right. He, he... I'm gonna have a play with the audio install. I just wanna make sure he's up to date. And then this, this-
+Speaker 2 Yeah, 'cause h- he's... I don't know. He doesn't really come into uni much. I don't know. I haven't seen him.
+Speaker 1 I've never met the guy. I don't know who he is. Uh, also, uh, yeah, you can read through this. This also has, gonna be some side things that, like, really should be involved in the actual thing. For example, was... Of course this has to be in it. The obje- objective tree diagram is, is not... It's... See, they have all these synonyms, but I don't know why they do it, but they are very, like, simple. Objective tree diagram is basically just decision tree making. For example, does it have this done? You know, that, that's easy. It's simple. W- these two can be done within, like, the next two weeks. Like, just for the define part. That these two require for the define part. This, we've done most, we've mostly done the, these two already. I will show you the, the, just the start of the document after this as well.
+Speaker 2 Mm-hmm. Okay.
+Speaker 1 Yeah, these two are towards, like, the, uh, towards the middle and the end part. But generally, this is how we're gonna approach it. This is the main p- point of the meeting. And are you gonna show that PowerPoint as well? Yeah, of course. Of course. On the
+Speaker 4 Yes.
+Speaker 1 I think the... Yeah. We can... Now, that was generally, that was the main point of the meet... Of the meeting. But now we can move on to, like, second part, which is generating the queries. Though I don't really blame you if you, if you can't think of any questions because of... You wouldn't be able to without, like, context, like, reading through.
+Speaker 2 Um, well, I mean, we kind of-
+Speaker 1 I don't-
+Speaker 2 We... The thing is, we talked about it... Oh.
+Speaker 1 Okay. So can you say that, say that?
+Speaker 2 What do I say? W- I mean, we kind of... We got a little bit of context from last week.
+Speaker 1 Yeah.
+Speaker 2 So, like, any of, like, our initial designs, we can ask questions about the scope and, like, what we are allowed to use, what we're not allowed to use. Like, for example, I think we should discuss...
+Speaker 5 ... what the, like, what's around the tube. Like, how, how we can anchor it to the ground so, like, before we take it up.
+Speaker 6 Yeah.
+Speaker 5 We have questions about that. 'Cause we, we know there's, like, you said there's a cylin- you know, the cylinder in- inside, you pull it out.
+Speaker 1 Mm-hmm.
+Speaker 5 And we're trying to get that. But, like, is it, like, firm ground around it? Is it in, like, around, like, uh, like, urban areas? Is there, is there points we can easily mount it to?
+Speaker 6 That was the main question, basically. Uh-
+Speaker 5 Like, those kind of questions. Or like, or are they expecting us to mount it to the actual, um, casing? Like-
+Speaker 1 It's, it's true. The thing is, right, most of our information so far that we've gotten is from the actual, like, the sheet line brief that they gave us, right?
+Speaker 5 Yeah.
+Speaker 1 The main goal in the defined part, the first thing we do is we, we gather the information that we're initially given, right? And then we break it down. S- and that, that is what I, uh, I'll show you my, uh, doc- uh, document so far. So, let me just have ... this is a, just a, just a, don't worry about that. This is the main, the first thing I started was I, I went through this paper, right? And I really tried to dissect it bit by bit to understand what we're given, right? I'm not trying to make any, like, assumptions or add on information that doesn't exist. I'm just going to be using what is said, right? What, what were you, what were you just saying, by the way? Yeah. The questions. The questions have to be based off of this.
+Speaker 6 The line brief.
+Speaker 1 Yeah. This is the, the, the line brief reference documents. Uh, no, no, it's from here. Here. This is the, the line brief. This, do you remember this one?
+Speaker 6 Yeah. This is the line brief.
+Speaker 1 You're going to send me this one?
+Speaker 6 No, this is the line brief for the service.
+Speaker 1 This one is, uh, this, this covers it. No, no, I'll send you this one. Don't worry.
+Speaker 6 Okay.
+Speaker 5 This was the one, it's on Canvas as well.
+Speaker 6 Yeah.
+Speaker 1 Is it?
+Speaker 5 Yeah.
+Speaker 6 Yes.
+Speaker 5 It's quite hard to find, though. You have to go, go to the-
+Speaker 1 I have all of them. Like, I have all of them. (laughs) I got, I got all of them.
+Speaker 6 Oh. Well, i- it's still in the Teams as well. General, I think. General or custom sharing.
+Speaker 5 Yeah.
+Speaker 1 I want you guys to out, between today and, um, on Friday, I want you guys to read through this brief and then go on, like, Word and just, like, jot down some, like, questions. And then you can-
+Speaker 5 And then on, and by, should we say, by, like, Thursday-
+Speaker 6 Yeah.
+Speaker 5 We'll, we'll, on Teams submit all the questions you have.
+Speaker 1 Yeah, then-
+Speaker 5 And then, and then we can, like, just, and then we can-
+Speaker 1 Discuss it a bit more.
+Speaker 6 Yeah.
+Speaker 5 ... get to the end.
+Speaker 1 We, we need to, like, once we all have our own questions, right, we need to, like, clear up, uh, some things.
+Speaker 5 Yeah.
+Speaker 1 That, that was what I want, I want, want make sure we have to do. So by Friday, we have to have that.
+Speaker 5 And make sure, like, we're all kind of on the same page going into the meeting so we look like a team, kind of thing.
+Speaker 6 Yeah.
+Speaker 1 So, we're probably gonna have to have online meetings.
+Speaker 6 Right. It's got to be proper questions, not silly questions.
+Speaker 5 Oh, yeah.
+Speaker 6 You know what I mean?
+Speaker 5 Yeah. And I-
+Speaker 1 Try to get an answer out of this guy.
+Speaker 6 No, but still, it's, it's a silly question. It's a silly, silly question.
+Speaker 1 No, no, it's, it's, it's very important how you ask the question.
+Speaker 5 But I also think, like-
+Speaker 1 Go ahead.
+Speaker 5 I, I reckon for the first 10, 15 minutes of the, in- for the, for the, like, the actual meeting, we're just gonna, it's gonna, not gonna be, like, we're not gonna get straight into it, I think.
+Speaker 6 Yeah.
+Speaker 5 If we want to at the end, like ...
+Speaker 1 Yeah. Listen, it's, I know what we're going to do for the first, the first 10, 15 minutes. We, ourselves, we're gonna dis- we're gonna say our imper- interpretation of what he gave us. And we have to ask for validation if we're correct, right? And then he, and then maybe he can, like, re-correct some of our stuff, right? And then we're gonna, in the document, we're gonna say that voice of customer said this and that, this and that. And then the second part is genuine questions that we have. That, that basically that's the sheet. That's it, like. So there's two part. First part, we, we speak, and then the second part, he speaks.
+Speaker 6 Must be. Go to, uh, my screen there. Just find it. I've downloaded it.
+Speaker 2 Can I take my stuff real fast?
+Speaker 1 Oh, yeah, sure.
+Speaker 2 I'm getting super critical here. Yeah. All right.
+Speaker 1 Generally, this, this is like, main focus of this was ju- this meeting was mainly just for the approach, like, for the actual hold up. But the actual Friday meeting, we're probably gonna have to have another separate meeting for that because it's very, like ...
+Speaker 6 You can do it on Thursday, but then you have to-
+Speaker 1 No. We'll do, we'll do it online. It's not going to be-
+Speaker 6 Yeah.
+Speaker 1 ... too serious. Like, we'll just do it casual.
+Speaker 6 Casual and get some hot coffee or something.
+Speaker 1 Guys, this is very straightforward. Nothing complicated about it. Don't stress.
+Speaker 5 No. No, I think, I think, I think also, we just, it's just, he's just trying to get to know us and see what kind of team we are.
+Speaker 1 Yeah, yeah.
+Speaker 5 And like, how, how seriously we're taking it.
+Speaker 1 Yeah.
+Speaker 5 Like, I don't think we need to, we don't need to have all the answers by next week. I think the whole ... we just need to-
+Speaker 1 We don't know any answers.
+Speaker 5 Well, that's what I mean. We just- (laughs)
+Speaker 1 We don't know anything. (laughs) We just got to ask him the questions.
+Speaker 5 Exactly. Ask the questions and just-
+Speaker 1 Go forward. That's it.
+Speaker 5 ... make sure we have the, we understand what the project is and make sure-
+Speaker 6 Yeah.
+Speaker 5 ... we're getting everything kind of right, so then we can move on from there.
+Speaker 1 Mm-hmm.
+Speaker 6 Right.
+Speaker 5 Um.
+Speaker 1 Mm-hmm.
+Speaker 5 Yeah.
+Speaker 1 But if I'll, after this, I'll release the Word document for the, um, uh, how should I say this? I wouldn't say plan for the meeting, but like, how we want the meeting to go, basically.
+Speaker 5 Yeah. Like, how, how we view it going, I guess.
+Speaker 1 All right.
+Speaker 5 Sounds. Um.
+Speaker 1 If you have any- anything else you want to ask me or any, if you're, if, if, if you guys understand anything that's-
+Speaker 6 Uh, no.
+Speaker 5 ... goes so far.
+Speaker 6 No.
+Speaker 5 Tell me. Yeah.
+Speaker 6 I don't want to ask anything. Just-
+Speaker 1 Sure.
+Speaker 6 Just the PowerPoint.
+Speaker 1 Uh-huh.
+Speaker 6 First of all.
+Speaker 5 Last week's as well?
+Speaker 6 Show that.
+Speaker 5 You mentioned last week's.
+Speaker 1 It's, it's all on there. It's all on there.
+Speaker 6 Whenever you have time.
+Speaker 1 It's on the, um, on Teams. Like, I'll show you.
+Speaker 6 Oh, 'cause the live recording.
+Speaker 1 Also, also, you saw, uh, my thing here? This, this, uh, sorry.
+Speaker 5 Oh, wait. What, where do we find all your, like, what, website?
+Speaker 1 My, m- by, by the way, you see this thing here, my structure, right? Like, I have all my companies, but I don't need all of them. For example, meeting one, audio meeting one, I went and added audio after this reference document and then the research paper. All of this, all of this stuff that I have outlined here, I will put on my, uh, my website. You can look at it. But the main, main stuff, like, the actual, just the PowerPoint, is, will be on the, on this thing here, the Teams. They will be on hour one, hour one, and then it says, should be, uh, go out. One second.... in the files and then they should be, all be here.
+Speaker 7 Excellent. A'ight.
+Speaker 1 But if you really wanna, like, deep dive into the actual stuff, I will be posting it on my website and you can look at it.
+Speaker 7 I personally need to focus on the library. Go through it.
+Speaker 1 Yeah, yeah. D- don't worry.
+Speaker 7 Get the questions-
+Speaker 1 After this meeting's done.
+Speaker 7 ... ready.
+Speaker 1 After this meeting's done, I'll, I'll give the instructions, um, bef- uh, before Friday.
+Speaker 3 But yeah. But like everyone, just make sure everyone understands the library.
+Speaker 1 Evidently-
+Speaker 7 Yeah.
+Speaker 1 ... you get, you get how to do that. I mean, I don't really have to tell you that. Y- y- all understand, yeah?
+Speaker 7 Of course.
+Speaker 1 All right. Well, cool.
+Speaker 3 Okay, um, also can you post the link to your website on-
+Speaker 1 Yeah, yeah.
+Speaker 3 ... Team's-
+Speaker 1 I, I definitely will. I definitely will.
+Speaker 7 So you have a website?
+Speaker 3 Yeah, it's where like-
+Speaker 1 Not really a website. It's just where I put my documents and stuff like that. It's the same thing from, uh, when we were doing the project.
+Speaker 7 Introduce us.
+Speaker 1 Pardon?
+Speaker 7 Introduce us to your website.
+Speaker 1 No, it's not a website. Yeah, I literally just told you. Remember when we did-
+Speaker 3 It's like a drive.
+Speaker 1 ... the lab report?
+Speaker 7 Yeah.
+Speaker 1 Remember when we did the lab report? It's... It's... I, I just post my stuff here. For example, I don't know, like, I don't know. iMachi, I guess. This is literally... uh, for example, this would be the same thing.
+Speaker 7 Yeah.
+Speaker 1 You see all the documents and then-
+Speaker 7 Okay.
+Speaker 1 ... and then the PDF. Like you just go on this. I have always... gets updated. Also, another thing that's good about this is it gives you, like, history and stuff. For example, I commit stuff. I'm not gonna show it to you now, but it's good for documentation. For example, it gives dates for when I update it and, and I give, like, comments on what I updated. It's good for logging. It's good for the, this... What d'you call it?
+Speaker 3 Uh, also it's like if any-
+Speaker 1 Gantt chart.
+Speaker 3 Yeah.
+Speaker 1 It's good for the Gantt chart.
+Speaker 3 Um, should... I'm happy to try and make a Gantt chart. I've made one before, um, on Excel. Or I can try do it on another website.
+Speaker 1 Okay. Tha- that's, that's up to you then.
+Speaker 3 Which is just-
+Speaker 1 That's your job. (laughs)
+Speaker 3 I'm happy with that. Yeah, yeah. Um, other than that, that's about it.
+Speaker 1 Between... Yeah, yeah. I'll, I'll, I'll help a little bit with the Gantt chart. Uh, I'm gonna upload the context. So the meeting's over. How, how was it? It's good?
+Speaker 3 Are we doing that right there?
+Speaker 1 Oh, yeah. (laughs)
+Speaker 3 I rate it, I rate it a 7 out of 10. Uh...
+Speaker 7 Yeah.
+Speaker 3 No, I'm joking. No, it is good.
+Speaker 7 I'll give you 10 out of 10.
+Speaker 1 All right. Next week... By, by next week, I, I will get this d... I'll get the define part. By next meeting, we'll have the meeting done. The define part, generally the define part is just the voice of the customer and the objective tree diagram. Those... Uh, the define will be very strong. By next Monday, it will be very strong. And we're gonna, we're gonna actually have to start thinking. But... What was the second part? It's like measure, right? I think it was measure. It was, uh... It was measure. We're gonna be starting to focus on measure. Like, measure basically means we use the, the requirements to... And we rec-... Use the requirements and the data to start like a SWOT analysis and start maybe getting some di-... Um, what do you call it? Designs in here.
+Speaker 3 Yeah, like doing concepts but also like how do we, how do we measure our success? Like-
+Speaker 1 Yeah, but the thing is, right, I don't think we can have a meeting by next week because I won't have any new material. I... It just... But what I'm trying to say is things will be getting done by next Wednesday, but there won't be new, new material.
+Speaker 3 Well, we can always try close to the timer. If we feel like we need a meeting next Monday, we can-
+Speaker 1 No, no.
+Speaker 3 ... have one.
+Speaker 1 I don't think we'll have a meeting this Monday.
+Speaker 3 Well then, well then we have one the week, the week after or something.
+Speaker 1 How about we just have done break that.
+Speaker 7 It's a hard turn.
+Speaker 3 Well, then we'll have to have a meeting. We can't-
+Speaker 1 That's when November starts.
+Speaker 7 (laughs)
+Speaker 3 That's pretty much the plan.
+Speaker 1 Wait, w- what is the date by the way?
+Speaker 3 Yeah, but we mentioned-
+Speaker 1 Can you check the date for... by that date?
+Speaker 3 We d- we do... We've remained-
+Speaker 1 Two weeks.
+Speaker 3 So it'll be the 3rd-
+Speaker 7 It's three weeks.
+Speaker 1 That's... Okay. Yeah, the third was when we start, we start measuring. Oh. This is actually a very long time. A little bit of measure will be done. I'll get something a little bit... Uh, you guys will see it. A little bit of measure will be done.
+Speaker 7 Yeah. Um, you know what? Because it was the 3rd to the 8th, and then the 10th is when we go back to uni.
+Speaker 1 Is it the 10th?
+Speaker 7 10th is the week after where we get back, isn't it?
+Speaker 6 Yep.
+Speaker 1 We get two weeks off or one week off?
+Speaker 6 One week off.
+Speaker 3 But then don't... But we don't have to have a meeting with our, the person, uh-
+Speaker 1 The re... We have one this Friday, yeah?
+Speaker 3 Yeah, but then every, every two weeks, every fortnight.
+Speaker 1 We have to have it every two weeks.
+Speaker 7 Exactly.
+Speaker 6 Who said that?
+Speaker 1 Uh-
+Speaker 6 No, monthly or fortnightly?
+Speaker 7 Wait, wait, wait. Every two weeks. That's fine. Even, even when we have a meeting.
+Speaker 3 It's too busy.
+Speaker 7 It's only gonna be to show progress. (laughs)
+Speaker 3 Yeah.
+Speaker 1 We won't have anything qu-
+Speaker 3 But if we have it on this Friday, then I guess, to be fair, if we have it on, like, the week, we can do it, like, the week when we come back 'cause we could... We have like-
+Speaker 6 Yeah.
+Speaker 3 ... it'll be like, um, two weeks plus or plus a couple days, which is fine.
+Speaker 7 I don't think we will have more than three meetings with this person.
+Speaker 3 We'll have a few.
+Speaker 7 'Cause after the second one, we're almost due.
+Speaker 1 Yeah, 'cause we're gonna have-
+Speaker 7 There's-
+Speaker 1 ... most of our questions are gonna be gone.
+Speaker 3 Oh yeah, actually. Yeah.
+Speaker 7 We're presenting 10th of December, I think.
+Speaker 6 Yeah.
+Speaker 1 And you know the thing is, right, in the actual posting, you only need like three to four things, requirements that he asks for. You don't need that much.
+Speaker 7 So I would say maybe two meetings with this guy.
+Speaker 3 Yeah.
+Speaker 6 I don't know.
+Speaker 7 Then we're done.
+Speaker 3 Honestly, this year's going so fast.
+Speaker 7 If everything closes 10th of December.
+Speaker 1 November and then it's December, yeah.
+Speaker 7 Yeah.
+Speaker 3 Like, I think it's crazy to think that, um, October's like... is almost over.
+Speaker 7 It is.
+Speaker 6 Yeah, it is.
+Speaker 3 Like, we've got 10 days and then-
+Speaker 7 Yes. Link or no is November and that's it.
+Speaker 1 All right, guys.
+Speaker 7 You're off for a week.
+Speaker 3 This year's going too fast. (laughs)
+Speaker 7 (laughs)
+Speaker 3 It's going too fast.
+Speaker 1 Thank you for your time and bye.
+Speaker 7 That's very good, Cal, it's going pretty fast.

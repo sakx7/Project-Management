@@ -1,0 +1,341 @@
+Speaker 1 And we do this with every project. So they're like, "Oh, we need a log book of, like, all our meetings." And then you get to the projects and you're like-
+Speaker 2 (door closing)
+Speaker 1 "Oh, shit, I haven't recorded anything."
+Speaker 2 Sounds good. We'll just record it. (zippers zipping) (papers rustling) I wonder if I can see it on my screen. Yeah, I think I need to drag it. Yeah.
+Speaker 1 Yeah, drag it over, yeah. 'Cause it was clearly, it can't-
+Speaker 2 Is it just four of us, or something's missing?
+Speaker 1 I don't know, just four of us.
+Speaker 2 Is it?
+Speaker 3 No, it's just us four. And I already messaged her, said she's okay with it. (chair squeaking) It's fucking ... All right. So we're gonna ... Look. (papers rustling) Think it's on. All right. This is, uh, the super critical one, by the way.
+Speaker 1 Yeah.
+Speaker 4 Yeah.
+Speaker 2 You know the title? Do you, do you guys, like, have you, have you ... No, it doesn't matter if you've read it. Basically, t- but you know in, like, secondary school, right, you know how these vessels, right, where you put, like, the anode and the cathode in, right? And then-
+Speaker 1 Mm-hmm.
+Speaker 2 ... you produce electricity and it would split and then the hydrogen would, like, come out and that. But this is on like a industry level, right? It's, you would think that it would be massive, but it's honestly not that big. So basically, uh, you can see from the example, right, they have, like, this e- electrolyzer. They ... Think of it as like a water bottle, right? And after, they have a lid, right, and the lid is connected to something. Like think of the lid having, like, a straw in or something. And then when you take it out, right? But the straw is like, as, almost as thick as the lid, right? So basically, if you read it, right, read it, basically soon as you're like, they wanna, like, pick up the thing, right? The, the stuff that's inside, right, the straw, that's the components where they need to main- main- maintenance, right? So they pick it up from the thing and with, like, a crane or something, and then they take it out and then they do maintenance on it and then they gotta put it back in. The only issue is because of, like, the, the, the clearance is, like, really small in it, so when they crane it out, it, like, might hit the edges and stuff, right? So what we need to do is make a frame, so, like, when they pick it up, it's, like, proper straight, like it doesn't sway side to side. That's pretty much it. Basically we need to make a conc- frame, so it helps the crane take it out when it's just pure vertical motion. There's no swaying side to side.
+Speaker 1 So we just, we just need to make something that shelters it-
+Speaker 2 (clears throat)
+Speaker 1 ... from, like, the wind and stuff that would blow it and then also make it so when the crane pulls it up, it's always vertical.
+Speaker 2 Yeah. And the issue is, if you think of it like that, technically that means we, we need to do it so that it works from taking it out and it works from taking it back in as well. Because of th- that same issue would apply putting it back in, obviously.
+Speaker 4 Well, we have to-
+Speaker 2 The thing is that we, we have to think of it in a way where we only know, we can only think of the electrolyzer as like a cylinder. We can only think of the lid as just a lid. And we can only think of the crane as some external force. We can't know exact details with the actual models. Like, we just have to be really generalized. Generally, this topic is, like, 70% just talking about teamwork, talking about ideas, but the actual design, the actual final thing, I'd say that was, like, 20% of this module.
+Speaker 4 Yeah.
+Speaker 2 Like, um-
+Speaker 4 That's what I mean.
+Speaker 2 So you don't have to worry too much. I ... You can think of, you can think ... Uh, and by the way, this also needs to be, like, easily, like, easy attached to something. Not like, shouldn't be too fixed one-time use. Has to be easy take it out, you know-
+Speaker 1 Right.
+Speaker 2 ... stuff like that.
+Speaker 1 Yeah, yeah.
+Speaker 2 It's modular, that's what they call it. Uh, you could read this slide.
+Speaker 4 So we have to, like, make a l- a, a thing which, uh, lifts up the lid- lid or like we have to-
+Speaker 2 No, no, no.
+Speaker 4 ... the whole, the-
+Speaker 2 They make, they make the crane or the whatever the thing, the hoist. We only have to make the thing that, uh, helps it stay straight while it's being pulled up.
+Speaker 4 Okay. Help me make the KHL study.
+Speaker 2 If you guys should have some- you could do, like, rails, you know? You can think of a ... By the way, generally it does not say that it's gonna be landscape or vertical, but if you really think about it, given-
+Speaker 1 Yes.
+Speaker 2 ... like, constraints. Given the constraints, if it was actually, like, if it was h- um, let's just say if it was horizontal, right, it wouldn't really make any sense 'cause then it would sag on the inside, right? It's ju-
+Speaker 1 Yeah. I'm assuming it's vertical.
+Speaker 2 Yeah.
+Speaker 1 I'm assuming the-
+Speaker 2 Yeah. I have to assume. But we have to write that down. It, the ... I generally think we might have to do both, like, uh, b- but we'd focus on the hor- the, the vertical one first.
+Speaker 4 Yeah. Because if you look at the supercharger, uh, uh, video, they have a, like, the electrolyzers in a vertical position, so it should, it should be like that.
+Speaker 2 Yeah. I haven't seen that video.
+Speaker 4 It's on YouTube. It's like a-
+Speaker 2 Okay. But I-
+Speaker 4 They have, like, overview of everything, what they do.
+Speaker 2 We'll see, we'll see that later. But you can, you, they gave us, they gave us, I, like I said, they, they gave us, like, a really basic, like, you know-
+Speaker 4 Yeah.
+Speaker 2 ... situation. So weighs 13 ... The vessel itself, like the actual, like, cylinder, it weighs 13 tons. It measures eight cent- okay, that's the diameter. Three mi- So I just drew a red vessel, right? Understand. Do you think that's tall? Like, do you think two meters and three-
+Speaker 1 Three, three, three meters, but-
+Speaker 2 It's, like, three people, like, three people.
+Speaker 4 Three people, no, it's-
+Speaker 2 You know this guy?
+Speaker 1 Three meters is, like, one and a half pe- people.
+Speaker 2 Oh, okay.
+Speaker 1 So it's, like, I'd say three meters is-
+Speaker 2 It's not that-
+Speaker 1 Like this, this ceiling is, like, maybe four, I'd say. So it'd be like three, four C now.
+Speaker 2 So it's not-
+Speaker 4 Yeah.
+Speaker 2 ... it's not, it's not that bad.
+Speaker 1 It's, it's big and the, but, like, I'd say it's-It's quite dense 'cause it's 13 tons and it's, like that's the only thing, is, is quite heavy.
+Speaker 4 13 is, could be material as well, material gonna be heavy as well? (clears throat)
+Speaker 2 No, no, no. They, they said that, they said that it weighs-
+Speaker 1 The vessel weighs 13-
+Speaker 2 No, no. I remember they put, they put the measurement of the internal thing, I, I didn't write it down-
+Speaker 4 It includes the liquid and the material-
+Speaker 2 Three tons block-
+Speaker 4 ... itself as well?
+Speaker 2 It's three tons. The, the, black, this, this internal equipment is three tons, incl- with the, with the lid as well.
+Speaker 1 Okay. So, so that's still a lot.
+Speaker 2 So that's like, how much is that? It's like three tons is 3,000, right?
+Speaker 1 3000 kilos, yeah. That's a lot of people.
+Speaker 2 Yeah. It's f-... I don't know how they did that, but, uh... Service or replace the internal equipment. The lid and the equipment block must be lifted completely out. Yeah, basically, think about it. If you really want to take it out, right, you have to lift it, the whole, this whole, like, length. 'Cause like i-... Right now, you have to lift it two meters up and then take it out. So that means, technically it has to be lifted two meters, like this length.
+Speaker 1 Well, yeah. Well, yeah, so-
+Speaker 2 That's loads. That's basic, you need to... Of course, that. You should know that, right?
+Speaker 4 Three, not two.
+Speaker 2 Yeah.
+Speaker 1 Wouldn't it be three meters? 'Cause you have to clear-
+Speaker 2 Yeah, yeah, yeah.
+Speaker 1 ... the whole thing and then you have to move it out.
+Speaker 2 Like plus extra clearance.
+Speaker 1 Yeah. So three and a half really, 'cause you don't want-
+Speaker 2 No, no, no. Yeah, yeah.
+Speaker 1 I would say, maybe not three and a half. But like you want at least-
+Speaker 2 We start slipp- we s-... The lifting starts at three meters. It will start here. So our ve- our, our frame has to be that tool at minimum.
+Speaker 1 Yeah. But it's whether you, it's whether you connect it, the frame from the ground or from just the top of the vessel?
+Speaker 4 No, from the top of the vessel.
+Speaker 2 Yeah, what you're thinking is, you're thinking as the frame... There's two ways we can make the frame. We can make the frame as, we just connect it to the actual, um, like, um-
+Speaker 1 The base.
+Speaker 2 We connect it to the actual, um, what do you want me to call it? The crane, right?
+Speaker 1 Yeah.
+Speaker 2 So we connect it to the lid of the crane. I have thought of that but, if you really think about it, li- it, it wouldn't really help, like s- stop it from swaying. Like it's very hard. But there's... Or we could just put it from the ground, which is another option.
+Speaker 1 But like, what does the, the, like... 'cause like surely they're in like a-
+Speaker 2 We can, we can th-
+Speaker 1 ... protective like sub... not substation, but you know what I mean? They're in like, there's stuff like building around it.
+Speaker 2 Yeah. That, that is anoth-... Look, if you read it here, another constraint is, think about, we can't really attach something straight to the vessel 'cause it will cause damag- damage, right?
+Speaker 1 Yeah.
+Speaker 2 So it gen-... But I, I've, I've been thinking about this a lot, right? I've thought of a lot of things and there are a lot of downsides to it. But generally, I think that I can think of one option. I will expl-... We could... We will look up... We will explain this, I'll explain this. These are just the rules, like basically.
+Speaker 1 Yeah.
+Speaker 2 After maintenance, the combined assembly must be lowered back into the preci- bas-... Yeah, it needs to be precisely, like it has to be straight in the middle. Like we don't want it to be slide off the edge. That's another thing. So it needs to be very precise.
+Speaker 1 Mm-hmm.
+Speaker 2 The entire equipment fits very tightly inside the vessel. Yeah. A very small clearance on the, on, on the inside. So we really need to nega- no, like get rid of that.
+Speaker 4 What is the shape of the electroli- electrolyzers? Like are they rounded or are they like in a...
+Speaker 2 It's... They gave us like cylinder-based measurements-
+Speaker 4 So we can just-
+Speaker 2 ... like they gave us diameters.
+Speaker 4 ... round it off still. So we can like, uh, make a rounded shape, a rectangular box with a like hole in, so... And a hole in the middle so it can go inside, no?
+Speaker 2 No, it's not a rectangle. It's, it's literally a cylinder, like I drew here.
+Speaker 1 It's a cylinder.
+Speaker 2 They, they, they gave us-
+Speaker 4 Yeah, but in the middle-
+Speaker 2 ... the vessel.
+Speaker 4 ... we can make a like hole so it can be secured from all sides.
+Speaker 2 Yeah, I know what you mean. You're talking about the frame, right?
+Speaker 4 So, yeah. So this is gonna-
+Speaker 2 The actual frame.
+Speaker 4 Yeah. This is a cylinder, so it can go slightly in and it can fit through. And we can block the underneath side properly, so like this. This is secure now.
+Speaker 2 That, that's a, that's your, that's your in- initial design of what you think the frame would be, right?
+Speaker 4 Yeah.
+Speaker 2 But we, we're not worrying about that right now. We'll worry about how the frame will look once we read the rules first. Let's... You read this slide, right? You guys read this slide?
+Speaker 1 Yeah.
+Speaker 2 You've read it?
+Speaker 4 Hm.
+Speaker 2 Basically, yeah, you guys, you should get the gi- gist of it, right?
+Speaker 4 Just, yeah.
+Speaker 2 Generally that is it, right? I'm open to ideas, but I generally have a good idea of what I think it would be, right? But I'm, I'm open to hear your ideas for now. Like if you guys have any ideas.
+Speaker 1 I was thinking-
+Speaker 2 O- obviously, first, like do you know guys... You guys know what a Bunsen burner is, right?
+Speaker 1 Yeah, yeah.
+Speaker 2 You know the, um, the tripod, right?
+Speaker 1 Yeah.
+Speaker 2 That's the one way you can think of it. But generally y- if you want to lift something two meters up, right? Th- this is the cylinder, right? We ha- it has to start up here. So obviously we're gonna need some external thing to bring it here. So generally, maybe... A- at first I thought like a tripod, right? But generally, I don't know how you would like, remove that after you're done, right? But th- the main concept is the rail. Obviously, what do you guys, what would you use to lift something two meters up? Like what would you guys use?
+Speaker 1 Well, I mean, well, they're using the crane. You could like attach-
+Speaker 2 Yeah.
+Speaker 1 ... on top of the frame like a-
+Speaker 4 Screws or bolts that-
+Speaker 1 ... bolt or like a pulley thing. So that-
+Speaker 2 Oh, yeah.
+Speaker 1 ... no matter what angle the crane is pulling at, the, the pulley's keeping the, the, the actual string, the da- not the actual string, the actual cable connecting to the thing straight.
+Speaker 2 But it's not possible 'cause the bottom of the container will always sway, the bottom. You see the bottom of the black box?
+Speaker 1 Yeah.
+Speaker 2 It will always... Even if you make it really like, um-
+Speaker 1 If you pull it vertical, if it's completely vertical, the pulley.
+Speaker 4 Like this, no?
+Speaker 2 No, it won't, it won't, it won't work because of... This will stabilize, this will stabilize like the first half, right? But the bottom half, it will, is still gonna sway.
+Speaker 4 It will still swing, swing, yeah.
+Speaker 2 It's still gonna sway 'cause of... That's just how the centroids work. 'Cause if you're controlling this with i- i- it, it wouldn't work. It wouldn't work. Just based off of logic. Think about it.
+Speaker 1 What, so you'd put like maybe like foam rails or something like in the middle to keep, to stabilize the height?
+Speaker 2 You guys know how trains work, right?
+Speaker 1 Yeah, yeah, yeah.
+Speaker 2 And what, what I would do is... So we have this, right? Because we wanna take... After we finish, we want to get rid of it easily, right? Um, uh, we want to add rails precisely on the, on the first half of it, like this round, right? So basically, after we're done, we could just push it out afterwards.
+Speaker 1 Yeah.
+Speaker 2 ... the rails would be here and then after we'd attach it onto these rails and then would easily, the hoist would just bring it up and it would follow these rails. That's my general take from it. I don't know what else you would use.
+Speaker 1 What's he saying? Just ... But what about, what about ... 'Cause it says the internal damage of it hitting the sides as it's coming up. Would you fit things inside the actual (clears throat) -
+Speaker 2 No, we cannot touch the black box. We can't cause damage-
+Speaker 1 No.
+Speaker 2 ... it. We can't damage ... We can only touch the lid.
+Speaker 1 No, no, no but I meant like not, not damage it but get like something like foam or something just down the cen- down there.
+Speaker 2 No, you can't touch the inside of the vessel.
+Speaker 1 So-
+Speaker 2 The main goal ... You're saying put ... We can't go inside the vessel and put stuff in there. Why-
+Speaker 3 No, but we can touch it from the outside body, you know?
+Speaker 2 Yeah, yeah, yeah.
+Speaker 1 Yeah, okay. So just, just double checking. Um, well so you're saying add on the frame on the outside, add a couple rails that were-
+Speaker 2 No, not on the frame.
+Speaker 1 Not on the frame but like-
+Speaker 2 It's, it's separate ... Actually no, yeah, yeah. The frame, the frame is a separate, separate thing from the actual vessel, right?
+Speaker 1 Yeah.
+Speaker 2 It's, it's, it's ... It is literally just ... I, I can't really draw it.
+Speaker 1 No, but I meant like ... No, but I meant like the, the, the thing we're, we're making-
+Speaker 2 Yeah.
+Speaker 1 ... you're saying add rails so that when it comes out it attaches to the rail-
+Speaker 2 Mm-hmm.
+Speaker 1 ... and it slides up? Is that what you're saying?
+Speaker 2 Yes, yes.
+Speaker 1 Oh, okay.
+Speaker 3 Or we can use a fork now, like fork that holds it like this.
+Speaker 2 From the top?
+Speaker 3 Uh, from the middle.
+Speaker 2 From the middle?
+Speaker 1 Yeah, but how are you gonna, how are you gonna get to the middle there?
+Speaker 3 Uh, yeah.
+Speaker 1 Because the, we're, we're not connect-
+Speaker 2 Think how stable a rail would be. Think how stable that is.
+Speaker 1 It would be but how would you get it connecting so that when you lift off that first bit could you-
+Speaker 2 Yeah, we're allowed to like and make an initial small lift.
+Speaker 1 A small lift so then, then you can act-
+Speaker 2 And then after, we'll attach it onto the, onto the, onto the rest.
+Speaker 1 Okay.
+Speaker 2 I'm, I'm not saying this is now completely ￡​der finished first I-
+Speaker 1 Well, yeah, no, no, it's not doing-
+Speaker 2 I'm, I'm ... I don't even think this is like ￡​backing it up. I'm, I'm open to ideas honestly.
+Speaker 1 To be fair, a guide rail would work but it's just getting that initial connection, that initial like ... Because how would ... What would you, would you fit-
+Speaker 2 I'm saying we lift it a little bit and then we, we attach on to the mechanism of the rails, right? We attach it on and after we take our parten- the, the thing is-
+Speaker 3 Must use the internal force.
+Speaker 2 That is ... Don't get me wrong. That, that would be easiest but-
+Speaker 3 Guys, sorry, are you using the crane to lift it out?
+Speaker 2 Yeah, it ... they said they would eat-
+Speaker 3 See.
+Speaker 2 They didn't give us any of that. They just said there'll be an external force ho- hoist or a crane but th- that's not part of the challenge. They said it could be any external ... they said that ... Don't worry. They did, they just said you can use ... they will use anything-
+Speaker 3 They, they, they like use the piston like that. The piston.
+Speaker 1 What, from below?
+Speaker 3 Yeah. Pulling out.
+Speaker 1 Wait, by the way, do we have-
+Speaker 2 Wait, wait, wait. What do you mean? What do you mean about this?
+Speaker 1 But the only thing is we can't ... No, because we can ... We ... To do that you'd have to drill into the bottom of the-
+Speaker 3 Of the f- surface. Of f- surface.
+Speaker 1 ... of the, the surface and also you need for that to work you need a seal.
+Speaker 2 You guys can't tell me this is like concrete, like what I thought.
+Speaker 1 No, no, no, no. It's not concrete but no, but I'm saying the other issue with that is that you need a seal around that and we're not allowed to alter the-
+Speaker 3 Oh, okay.
+Speaker 1 ... casing it's in. So it'd have to come from like a string or something being ... pulling it all like a ... sorry, a cable pulling directly from above. And it's about keeping it like s-
+Speaker 3 Nothing from the bottom.
+Speaker 1 Yeah.
+Speaker 2 No, no, no, no, no.
+Speaker 3 It's completely sealed.
+Speaker 2 Yeah, what? You can't tell me my idea's not bad.
+Speaker 1 No, no. It's a good idea.
+Speaker 3 My idea's good.
+Speaker 1 No, yeah, yeah.
+Speaker 3 But I'm just, in my head I'm just going somewhere, you know?
+Speaker 2 Yeah, yeah.
+Speaker 1 Yeah. 'Cause it would literally have to be a ... it'd have to be a, something, a crane or something to pull it.
+Speaker 2 Yeah, but it's weird 'cause like let's just say this, this ... It will work ... It will probably work for when taking out, right? When you put it back in, how, how is that supposed to work? We probably have to go to the top, right? The top will ... we're gonna have to ... Ah, it's just, it's just weird.
+Speaker 1 No, you'd have to have ... I think you'd have to have like, um, something-
+Speaker 2 We have to reattach it. Uh, it might not be that bad to be honest.
+Speaker 1 No, no, no, no, not a template but you know, if you think about like-
+Speaker 2 No, I think this idea's not bad. I think-
+Speaker 3 (coughs)
+Speaker 2 Hey, let me hear you. Let me hear you.
+Speaker 1 Like, you ... With ... I think the way we'd ... Because you know how to be precisely put in and out, you'd need something like ... not, not like a template but you know with like if you have like a notch in something and you can line up the notch so it's right every time. You know, you know what I mean? It's like when you ... with the actual frame when you put it on, you could put something so it all ... so it lines up-
+Speaker 3 Mm-hmm.
+Speaker 2 ... with the-
+Speaker 3 So is this �in-
+Speaker 2 Yeah, but we have to sort the ... I know, yeah, that is good for precise but the thi- ... Oh yeah, that's true. That's just-
+Speaker 1 Because, because-
+Speaker 2 The frame, the frame should have that. The frame should have that.
+Speaker 1 But also, also how would you with, with, with the, with the, um, with the crane, well, with your rails, what would the not wheel but what would the connection be like on the ... 'Cause like would you have the rails on the actual cylinder or would you have the rails on the outside and then have like-
+Speaker 2 No, no. They will be, they will be touching. They will be attached onto the lid.
+Speaker 1 Onto the lid.
+Speaker 2 Yes.
+Speaker 1 And so you'd have like, um, little, not wheels. What do you call them? Like a rail thing. What's it called? Like clamp things.
+Speaker 2 Yeah, yeah.
+Speaker 1 Yeah. Okay.
+Speaker 2 Uh-huh.
+Speaker 1 Okay. And are we allowed to alter ... Are we allowed to do that to the lid or-
+Speaker 2 Yeah, yeah. Why not?
+Speaker 1 Okay. No, it's annoying so I just wanted to know.
+Speaker 2 Yeah.
+Speaker 3 Is ... This is one of them like this. I think so.
+Speaker 2 What, is that you're saying that's an electrolyzer?
+Speaker 3 Yeah.
+Speaker 2 Yeah, but they're ... those are like so like ... I don't ... The thing is that, that, that might be electrolyzer but that's not what they wrote. I'm, I'm looking at the live brief.
+Speaker 1 Yeah, this thing says-
+Speaker 2 I'm just doing what the live brief says. I ... the electrolyzers-
+Speaker 1 That's the thing.
+Speaker 2 When I look up electrolyser, lyser, on the internet it's very confusing. None of them even look really the same.
+Speaker 1 Where ... Which ... On the ... I'm on the live brief now. Where?
+Speaker 2 It's on the second page. Or the first thing. Yeah, this here. This, these two paragraphs.
+Speaker 1 Yeah.
+Speaker 3 Where is the live brief? It's on, um, uh, Teams.
+Speaker 2 I sent it to you, no?
+Speaker 3 No, she ... yeah, she said-
+Speaker 2 I sent it on Teams. I remember.
+Speaker 3 It's on Teams, yeah.
+Speaker 2 Did I not send it to you on Teams or message?
+Speaker 3 Here. She saved it on her lap.
+Speaker 2 Actually, no, I didn't. I sent you somethings else.
+Speaker 3 No, that, that, that was a Jaguar.
+Speaker 2 Yeah, my bad.
+Speaker 1 This one teams, yeah.
+Speaker 3 This is it, isn't it?
+Speaker 2 What part?
+Speaker 3 No.
+Speaker 2 You guys, you guys can all read free risk. Do you agree that I genuinely have like the right idea about the project?
+Speaker 3 No, yeah, so like that, that has the right-
+Speaker 2 This is the project.
+Speaker 3 Yeah, yeah.
+Speaker 2 This is what we have. We've got that set in stone now.
+Speaker 3 Yeah.
+Speaker 1 Yeah, so they, they, yeah. So...
+Speaker 2 This doesn't-
+Speaker 1 I think, I think that, yeah, that's what they kinda looked like, I think. And then, I could be wrong, though.
+Speaker 2 Yeah, but e- the thing is, right, even though we don't actually need to know what it looks like though.
+Speaker 1 We just need to think about, yeah.
+Speaker 2 The, the, the, the library feels kind of stupid, dude. It's like they, they just want to test us or something. They don't a-
+Speaker 5 Okay.
+Speaker 2 They don't want anything from us, really. (paper rustling)
+Speaker 5 I've got one question here.
+Speaker 2 They don't actually want a final product. They just want to see what, what we thought of.
+Speaker 1 Yeah.
+Speaker 3 Exactly.
+Speaker 5 So, like, they have to make the cage to transport these things, or not?
+Speaker 2 They're not gonna make shit. They just want to know what we're good at.
+Speaker 5 No, I know. I understand what you want.
+Speaker 2 Right.
+Speaker 5 Like they are asking to make a cage, so they make a cage for, uh, moving the stuff or, like, what they want?
+Speaker 1 What will-
+Speaker 2 They want to do maintenance on the stuff inside.
+Speaker 1 So-
+Speaker 2 And then they're going to bring it back in afterwards.
+Speaker 5 Okay. So take it out-
+Speaker 3 Yeah.
+Speaker 5 and then come back in?
+Speaker 2 Yes.
+Speaker 5 Okay.
+Speaker 1 Yeah. So take it out and move it, put it down, and then do, do the opposite of moving.
+Speaker 2 Yeah.
+Speaker 1 Put a name back in the same place. Um... (woman singing)
+Speaker 2 Generally, that was the point of this presentation. Uh, not just presentation, the, this meeting, is to get you guys all set in stone with the idea.
+Speaker 3 So we all-
+Speaker 2 Um, if you guys want to put in your ideas in the teams, I'm, I'm always open, like, but generally this was the main thing. And also, now I have to think about it because of, if... No, I'll show you. (keyboard clicking)
+Speaker 5 So if we make it like this, then... (paper rustling)
+Speaker 2 No, we cannot touch the, the entire... We cannot touch this, the black box. We can't touch it. That's literally has the main important things that you can't touch that. That has the electronics, that has the mechanical parts. Cannot really touch that.
+Speaker 1 We can only, we can only touch the lid.
+Speaker 2 Can only touch the lid.
+Speaker 3 Where is the library?
+Speaker 2 Uh, I don't know, guys. So you guys shouldn't, like lose... You, um... Sorry. You guys, I don't want you guys to lose focus on what generally the actual task, thing is, right? Our main, our main thing, the group poster is what our, what our group is doing as a group, right? Our main focus. Because that's where we get marked on, right?
+Speaker 3 That's it.
+Speaker 2 And the thing is with the group poster, you need to do what they ask for. It shouldn't be like zoned in on trying to get the design done, 'cause there are so many different things. Like, if you look on this guy's, uh, bro, the shit they ask is mainly just like group stuff. Like, "Oh, define project goals and scope, value to customer." Like they're not really asking for. They don't really care about the actual products. Like, let's be real. If you guys read this, this sheet, you guys will know what we should be focusing on.
+Speaker 5 But still, we have to present this thing with, with a-
+Speaker 2 Yeah, obviously.
+Speaker 5 ... people who-
+Speaker 2 But the thing, the things on the poster is not gonna be 90%, "Look at this mechanical part." No, no. They're just gonna say, (hand slapping) "Yo, what's your, um, what's your SWOT analysis? Or what's your, um, your quality function?" Like they're not going to be asking about the actual design.
+Speaker 1 Well, I think, I think they're going to be interested in the process we've taken. So they're going to, they wanna see like maybe how we went from our conceptual designs, why we didn't choose that design, why we chose that design.
+Speaker 2 No, bro, please, just look. Just read this page. If you read this, literally it says here that this is a, a guidance document. It literally guides you-
+Speaker 1 Yeah.
+Speaker 2 ... to what you should be doing. So-
+Speaker 1 Oh, wait, shit guys, I think we're meant to be in the...
+Speaker 2 Yeah. We'll go.
+Speaker 1 All right.
+Speaker 2 We're basically done with the presentation now.
+Speaker 1 Yeah.
+Speaker 2 Like, uh, you guys know now?
+Speaker 1 We're, we're all on the same page. We all know what's happening?
+Speaker 2 All right then. Yeah, it was good meeting. (chair creaking)
+Speaker 1 That's it?
+Speaker 2 Yeah, yeah. You guys can like go home or do whatever you want.
+Speaker 1 Well, no, 'cause I think we're meant to be in the lecture. Meant to stay for the...
+Speaker 5 Oh, yeah.
+Speaker 3 I don't know, I'm gonna stay. (hand slapping) I'm just here. (lips smacking)
