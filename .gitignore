@@ -1,0 +1,17 @@
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Obsidian notes
+.obsidian/
+
+# Excalidraw drawings
+Excalidraw/
+
+# LaTeX compilation files
+*.aux
+*.log
+*.out
+*.syntex.gz
+*.toc
