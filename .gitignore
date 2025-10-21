@@ -15,3 +15,6 @@ Excalidraw/
 *.out
 *.synctex.gz
 *.toc
+
+# elvn
+*.html
