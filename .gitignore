@@ -13,5 +13,5 @@ Excalidraw/
 *.aux
 *.log
 *.out
-*.syntex.gz
+*.synctex.gz
 *.toc
