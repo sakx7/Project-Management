@@ -1,4 +1,4 @@
-# **EG5016B: Exploring Engineering Project Management - Module Summary**
+# EG5016B: Exploring Engineering Project Management
 
 This module is assessed through two main assignments, totaling 100% of your grade.
 
