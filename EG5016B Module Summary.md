@@ -1,4 +1,4 @@
-**EG5016B: Exploring Engineering Project Management - Module Summary**
+# **EG5016B: Exploring Engineering Project Management - Module Summary**
 
 This module is assessed through two main assignments, totaling 100% of your grade.
 
@@ -17,4 +17,3 @@ This is an **individual, reflective report (2000-words).**
 *   **Deadline:** 15 January 2026
 
 In short, the module tests your ability to manage a real-world engineering project in a team and then critically reflect on your personal and professional growth.
-

@@ -12,13 +12,11 @@
 \usepackage{siunitx}
 \usepackage{lipsum}
 \usepackage[most]{tcolorbox}
-\definecolor{light-gray}{gray}{0.9}
-\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
 \usepackage{subcaption}
-
 \usepackage{parskip}
-\usepackage{times}
-%\usepackage{mathpazo}
+
+%\usepackage{times}
+\usepackage{mathpazo}
 %\usepackage{tgtermes}
 
 \DeclareSIUnit{\atm}{atm}
@@ -368,11 +366,11 @@ top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=wa
 \titleformat{\chapter}[block]{\Huge\raggedright}{\chaptername\;\thechapter\\[0.5em]}{0pt}{\Huge\raggedright}
 
 \renewcommand{\thesection}{\arabic{section}.}
-\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+\renewcommand{\thesubsubsection}{.\thesubsection\arabic{subsubsection}}
 
-\titleformat{\section}[block]{\bfseries\raggedright}{\thesection}{0.5em}{}
-\titleformat{\subsection}[block]{\raggedright}{\thesubsection}{0.5em}{}
+\titleformat{\section}[block]{\Large\bfseries\raggedright}{\thesection}{0.5em}{}
+\titleformat{\subsection}[block]{\large\raggedright}{\thesubsection}{0.5em}{}
 \titleformat{\subsubsection}[block]{\bfseries\raggedright}{\thesubsubsection}{0.5em}{}
 
 
@@ -413,16 +411,15 @@ Sangireddy Vrishin R$^{\hyperlink{affilA}{\text{a}}}$ \\[0.4em]
 	\vspace{3em}
 	\hrule	\vspace{-0.1em}
 \section*{Abstract}\vspace{-0.4em}
-\hspace{1em}This report presents the development of an {assembly and maintenance frame} for Supercritical Solutions' large-scale electrolyser vessel. The project uses the {DMAIC framework} to guide systematic problem definition, measurement, analysis, improvement, and control. Design concepts are generated, evaluated, and optimized to satisfy technical, operational, and sustainability requirements, while integrating stakeholder and customer needs through tools such as the {Voice of the Customer (VoC)} and {Objective Tree Diagram (OTD)}. Risk management, including {DFMEA}, and quality control measures are applied to ensure a robust, safe, and practical solution. The report documents methodology, key design decisions, and professional competencies developed.\\[2em]
+\hspace{1em}This report presents the \textit{development} of an {assembly and maintenance frame} for Supercritical Solutions' large-scale electrolyser vessel. The project uses the {DMAIC framework} to guide systematic problem definition, measurement, analysis, improvement, and control. Design concepts are generated, evaluated, and optimized to satisfy technical, operational, and sustainability requirements, while integrating stakeholder and customer needs through tools such as the {Voice of the Customer (VoC)} and {Objective Tree Diagram (OTD)}. Risk management, including {DFMEA}, and quality control measures are applied to ensure a robust, safe, and practical solution. The report documents methodology, key design decisions, and professional competencies developed.\\[2em]
 \hrule
 \section{Introduction}
 Electrolysers play a critical role in industrial hydrogen production, requiring {robust support structures} for safe and efficient operation. Designing assembly and maintenance frames for large-scale vessels presents challenges including structural integrity, accessibility, maintenance, and long-term reliability.\\[0.8em]
-This project focuses on developing an assembly and maintenance frame for Supercritical Solutions’ electrolyser vessel, applying {systems thinking} and the \textbf{DMAIC methodology}. Stakeholder and customer requirements are captured using \textbf{VoC} and \textbf{OTD}, while design evaluation uses tools such as \textbf{QFD} and concept trade-off analysis. Risk assessment via \textbf{DFMEA} and quality planning ensure compliance with technical, operational, and sustainability standards. 
-
+This project focuses on developing an assembly and maintenance frame for Supercritical Solutions’ electrolyser vessel, applying {systems thinking} and the {DMAIC methodology}. Stakeholder and customer requirements are captured using {VoC} and {OTD}, while design evaluation uses tools such as {QFD} and concept trade-off analysis. Risk assessment via {DFMEA} and quality planning ensure compliance with technical, operational, and sustainability standards.\\[0.8em]
 The report outlines project methodology, key engineering decisions, and rationale behind the chosen solution, highlighting professional skills developed including {project management}, {teamwork}, {critical thinking}, and {problem-solving}.
 
 \newpage
-\section{Define (D)}
+
 \color{red!50!black}
 \begin{itemize}[itemsep=-1mm]
 	\item \textbf{Customer and Stakeholder Requirements}: List functional requirements (load support, accessibility, safety, ergonomics) using \textbf{VoC}.
@@ -431,11 +428,53 @@ The report outlines project methodology, key engineering decisions, and rational
 \end{itemize}
 \color{black}
 
-\subsection{Industry Live Brief Breakdown}
+\section{Define (D)}
+\begin{minipage}{0.4\textwidth}
+	\begin{tikzpicture}[
+		scale=0.75,
+		every node/.append style={transform shape},    
+		myarrow/.style={-{Stealth[length=1.5mm,width=2mm]}}]
+		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (source) at (0,0) {Source\\Document};
+		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (problem) at (0,-3) {Problem};
+		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (req) at (0,-6.6) {Requirements};
+		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (final) at (-3.7,-4.5) {Canonical\\Problem};
+		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (voc) at (3.7,-4.5) {VoC};
+		\draw[myarrow] (source) -- (problem);
+		\draw[myarrow] (problem) -- (req);
+		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize] at (0,-4.6) {Intrinsic};
+		\draw[myarrow] (source) .. controls (-2,-2) and (-1.5,-4) .. (req);
+		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize,xshift=17pt] at (-2,-2) {Explicit};
+		\draw[myarrow] (problem) .. controls (-1.5,-2.9) and (-2.4,-3.2) .. (final);
+		\draw[myarrow] (req) .. controls (-1.8,-6.3) and (-2.6,-5.6) .. (final);
+		\draw[myarrow] (voc) .. controls (2.8,-3.5) and (1.7,-3) .. (problem);
+		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize] at (2.2,-3.3) {Validation};
+		\draw[myarrow] (voc) .. controls (3,-5.8) and (2,-6.6) .. (req);
+		\node[fill=white, draw=white, line width=3pt, inner sep=1pt,
+		rounded corners=2pt, font=\footnotesize, align=center]
+		at (2.5,-6) {Supplement \&\\Reinforce};
+	\end{tikzpicture}\\
+	\parbox[t][10pt][t]{\linewidth}{%
+		\vspace{0em}
+		\captionof{figure}{Define Phase Workflow: From Source to Canonical Problem}%
+	}
+\end{minipage}\hfill
+\begin{minipage}{0.57\textwidth}
+	\subsection{Approach Overview}
+	This Define phase establishes a clear and validated understanding of the problem by consolidating information from the Initial Industry Brief, Voice of the Customer (VoC), and stakeholder inputs. Our approach follows a structured path:\\[0.1em]
+	\begin{itemize}[itemsep=1mm]
+		\item Extract key information from the Industry Live Brief to identify preliminary problems.
+		\item Validate and refine these problems and requirements through VoC feedback.
+		\item Translate validated insights into measurable requirements and objectives.
+		\item Define material, dimensional, and regulatory constraints to ground the design in feasibility.
+	\end{itemize}\vspace{1em}
+	By combining insights from source documents, VoC feedback, and iterative refinement, we ensure that the problem definition is both grounded in reality and rigorously specified.
+\end{minipage}\\[1em]
+ This integration of intrinsic context, explicit formulation, validation, and reinforcement leads to a canonical problem that clearly defines requirements, objectives, and constraints, providing a solid foundation for the next phases of concept development and evaluation.\\[2em]
+\hrule\vspace{0.3em}
 
+\subsection{Industry Live Brief Breakdown}
 \begin{minipage}{0.58\textwidth}
-The live brief provided by \textbf{Supercritical Solutions Ltd} defines the project as:
-\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+Our initial source document is the live brief provided by \textbf{Supercritical Solutions Ltd}, which defines the project as:\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
 	Designing an assembly and maintenance frame for Supercritical’s large-scale electrolyser vessel.
 \end{formal}
 This statement establishes the project’s core intent — to create a support and handling system for a critical industrial component. Implicit within this is the need for mechanical stability, safety in operation, and consideration of human and environmental factors.
@@ -553,7 +592,6 @@ Zaarour, A. (2025). \textit{Industry Live Brief: Designing an assembly and maint
 
 \url{https://knowledgebase.nexpcb.com/articles/assembly-types-and-levels/}
 \url{https://en.wikipedia.org/wiki/Maintenance}
-
 
 \end{document}
 

@@ -1,9 +1,10 @@
+## Live Briefs for Mechanical & Automotive Students
+
 Live briefs are real-world projects from industry partners that let students apply academic knowledge to practical challenges. 
 They simulate professional scenarios, helping students tackle current industry problems, get feedback from experts, develop key skills like project management and problem-solving, and build a portfolio of real projects.
 
 As a student, your role is to act as both project manager and engineer: understand the brief, analyze requirements, plan strategically using PM, QM, and systems thinking, collaborate with your team and mentor, make informed decisions, adapt based on feedback, and present your solution. Your mentor provides the brief, sets expectations, offers expertise, reviews progress, and guides your professional development throughout the project.
 
-## Live Briefs for Mechanical & Automotive Students
 
 | #                                                                         | Project                     | Description                                                                                                                                             | Files                                                                                                     |
 | ------------------------------------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
