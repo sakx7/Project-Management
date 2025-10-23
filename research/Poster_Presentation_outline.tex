@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[9pt]{extarticle}
 \usepackage{graphicx} 
 \usepackage{float}
 \usepackage{booktabs}
@@ -8,81 +8,65 @@
 \usepackage{cancel}
 \usepackage{changepage}
 \usepackage{placeins}
-\usepackage{enumitem}
 \usepackage{siunitx}
 \usepackage{lipsum}
 \usepackage[most]{tcolorbox}
 \usepackage{subcaption}
 \usepackage{parskip}
 
-%\usepackage{times}
-\usepackage{mathpazo}
+\usepackage{times}
+\usepackage{anyfontsize}
+%\usepackage{mathpazo}
 %\usepackage{tgtermes}
-
-\DeclareSIUnit{\atm}{atm}
 
 \usepackage{tabularx}
 \usepackage{amsmath, amssymb, amscd, MnSymbol, mathrsfs}
 \usepackage{cellspace}
 \usepackage{tikz}
+\usepackage{tikz-3dplot}
 \usetikzlibrary{calc,3d, patterns, angles, quotes, decorations.markings, decorations.pathmorphing, hobby}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{patterns.meta}
+\tikzset{>=latex}
 \usepackage{xfrac}
-
 \usepackage{chemfig}
 \usepackage{caption}
 \usepackage{bm}
-
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{afterpage}
-
 \usepackage{empheq}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{xstring}
-
 \pgfplotsset{compat=1.18}
-
-
-\usepackage[european,americanvoltages,americanresistors,cuteinductors,fetbodydiode]{circuitikz}
-\usetikzlibrary{circuits.logic.US}
-\usepackage{siunitx}
-\usetikzlibrary{arrows,shapes,calc, positioning, patterns, decorations, decorations.markings}
-\usetikzlibrary{positioning}
-\usetikzlibrary{calc}
-%\ctikzset{bipoles/thickness=1}
-%\tikzstyle{every node}=[font=\small]
-%\tikzstyle{every path}=[line width=0.8pt,line cap=round,line join=round]
-
-\def\CalcC#1{%
-	\coordinate (base) at (#1.base);
-	\coordinate (collector) at (#1.collector);
-	\coordinate (emitter) at (#1.emitter);
-	\draw (barycentric cs:base=0.5,collector=0.5,emitter=0.5) circle [radius=14pt];
-}
-
-\usepackage{tikz-3dplot}
 \usepackage{textcomp}
-% Custom commands
-\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=figures/]
 
-%\usetikzlibrary{external}
-%\tikzexternalize[prefix=figures/]
-
-\newcommand\myfrac[2]{\sfrac{#1\mkern-1.2mu}{#2}}
 \usepackage{xcolor}
 
-% Define custom colors
-\definecolor{darkblue}{rgb}{0.1,0.1,0.5} %  dark blue shade
-\definecolor{formalshade}{rgb}{0.95,0.95,1} % light blue shade for the background
 
-% For the adjustwidth environment
-\PassOptionsToPackage{strict}{changepage}
-\usepackage{changepage}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{varwidth} 
+\usepackage{mathtools}
+\usepackage{scalerel}
+%\usepackage{showframe}
+\usepackage{fancyhdr}
 
-% For formal definitions
+\usepackage[left=0.8in,right=0.8in,top=0.5in,bottom=0.31in,includeheadfoot,letterpaper,footskip=0.02in]{geometry}
+\pagestyle{fancy}
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead[L]{\textit{S. Abiikar, F. Varley, A. Alireza et al.}}
+	\fancyhead[R]{\textit{EG5016B - Exploring Engineering Project Management}}
+	\fancyfoot[C]{\footnotesize\thepage}
+}
+\setlength{\headsep}{0.2in}
+
 
 \usepackage{framed}
 \newcommand{\formalsource}{}
@@ -98,57 +82,41 @@
 	}%
 	\MakeFramed{\advance\hsize-\width\FrameRestore}%
 	\begin{adjustwidth}{5pt}{7pt}%
-		\vspace{4pt}%
-		\ifx#2\empty\else\smash{\raisebox{-0.5em}{\huge\lefty}}\hspace{0em}\fi%
+		\ifx#2\empty\else\smash{\raisebox{-0.5em}{\Huge\lefty}}\hspace{0em}\fi%
 	}{%
-		\hspace{0em}\smash{\raisebox{-0.5em}{\huge\righty}}\\%
-		\vspace{0pt}%
+		\hspace{0em}\smash{\raisebox{-0.5em}{\Huge\righty}}\hfill%
 		\ifx\formalsource\empty\else\hfill{\footnotesize\textit{\formalsource}}\fi%
 	\end{adjustwidth}%
 	\endMakeFramed%
 	\noindent%
+	\\
 }
 
-
-% Custom itemize list with images for positive and negative items
-\newlist{gitemize}{itemize}{1} % Just one level for the list
-\setlist[gitemize,1]{
-	leftmargin=2.8em, % Adjust the margin for the list
-	labelsep=1em % Control the space between the label and the list item
+\newenvironment{formalt}[3][]{	
+	\renewcommand{\formalsource}{#1}
+	\def\lefty{\color{#2}\textquotedblleft}
+	\def\righty{\color{#2}\textquotedblright}
+	
+	\def\FrameCommand{%
+		\hspace{1pt}%
+		{\color{#2}\vrule width 2pt}%
+		{\color{#3}\vrule width 4pt}%
+		\colorbox{#3}%
+	}%
+	
+	\MakeFramed{\advance\hsize-\width\FrameRestore}%
+\begin{adjustwidth}{-15pt}{0pt}%
+	\ifx#2
+	\empty
+	\else
+}{%
+	\fi%
+\end{adjustwidth}%
+\vspace{0.5em}
+\endMakeFramed%
+	\noindent%
+\\
 }
-
-\newcommand{\checkitem}{\raisebox{-0.25\height}{\includegraphics[width=0.4cm]{checkmark.png}}}
-\newcommand{\crossitem}{\raisebox{-0.25\height}{\includegraphics[width=0.4cm]{cross.png}}}
-
-
-\usepackage[left=0.8in,right=0.8in,top=0.5in,bottom=0.5in,includeheadfoot,letterpaper]{geometry}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{tabularray}
-\usepackage{varwidth} 
-
-\usepackage{mathtools}
-\usepackage{scalerel}
-%\usepackage{showframe}
-\usepackage{fancyhdr}
-
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0.4pt}
-%\fancyhead[L]{\leftmark}
-\fancyhead[R]{Page \thepage}
-\setlength{\headheight}{30pt}
-\setlength{\footskip}{20pt}
-
-%\fancypagestyle{plain}{
-	%    \fancyhf{} % Clear all header and footer fields for plain style
-	%    \fancyhead[L]{\includegraphics[height=1.2cm]{images/Kingston_University_London_logo_200-tablet.png}} % Left header
-	%    \fancyhead[R]{EG4019 - ME - Engineering Mechanics and Materials} % Right header
-	%    \fancyfoot[C]{Department of Mechanical Engineering} % Center footer
-	%    \fancyfoot[R]{\thepage} % Right footer (page number)
-	%}
-
-
 
 \newcommand{\wm}[2]{%
 	\begin{minipage}{#1\textwidth}
@@ -158,8 +126,6 @@
 
 
 \usepackage{scalerel}
-
-
 
 \usepackage[export]{adjustbox}
 \usepackage{tocloft}
@@ -172,7 +138,7 @@
 
 
 \usepackage{hyperref}    % For hyperlinks
-\usepackage{xurl}        % For better URL handling
+\usepackage{xurl}        % better URL handling
 \hypersetup{
 	colorlinks=true,
 	linkcolor=cyan!80!black,
@@ -180,93 +146,23 @@
 	citecolor=cyan!80!black
 }
 
-
-
-\definecolor{ChineseGold}{HTML}{C59401}
-\definecolor{AmericanGold}{HTML}{D3AF37}
-\definecolor{MetallicSunburst}{HTML}{A77C37}
-\definecolor{GoldenBrown}{HTML}{996515}
-\definecolor{DarkBrown}{HTML}{674222}
-\definecolor{SkyBlue}{HTML}{87CEEB}      % Soft and bright
-\definecolor{BabyBlue}{HTML}{89CFF0}     % Gentle, pastel-like
-\definecolor{SteelBlue}{HTML}{4682B4}    % Rich but not overpowering
-\definecolor{RoyalBlue}{HTML}{4169E1}    % Strong, slightly purplish
-\definecolor{MidnightBlue}{HTML}{191970} % Almost black, deep navy
-\definecolor{PrussianBlue}{HTML}{003153} % Very deep blue with a classic look
-\definecolor{mainblue}{HTML}{1D73BE}
-
-\usepackage{listings}
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
-\lstdefinestyle{mystyle}{
-	backgroundcolor=\color{white!97!gray},   
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{purple},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{orange},
-	basicstyle=\ttfamily\scriptsize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=2
-}
-
-\lstset{style=mystyle}
-
-%Refer to the equation as \eqref{equation}.
-\usepackage{caption}  % This package allows captioning outside of a float
+\usepackage{caption}
 \usepackage[export]{adjustbox}
 
+\usepackage[para]{footmisc} % making footnotes run together in a paragraph
 
-\usetikzlibrary{patterns}
-
-\usetikzlibrary{patterns.meta}
-\usepackage[para]{footmisc} % Example of making footnotes run together in a paragraph
-
-\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
 
 \usepackage{datetime}
-
+\usepackage{datenumber}
 \usepackage{etoolbox}
-\AfterEndEnvironment{landscape}{\clearpage\restoregeometry}
 
-\makeatletter
-\def\tagform@#1{\maketag@@@{{Eq.~#1}}} 
-\makeatother
 \usepackage{enumerate}
+\usepackage{enumitem}
+
 \usepackage{ifthen}
 \usepackage{calc}
-\usepackage{datenumber}
-
 \usepackage{physics}
-\usepackage[outline]{contour}
 \usepackage{shapepar,transparent}
-\usetikzlibrary{patterns,decorations.pathmorphing}
-\usetikzlibrary{arrows.meta}
-\tikzset{>=latex}
-\contourlength{1.1pt}
-
-\colorlet{mydarkblue}{blue!50!black}
-\colorlet{myred}{red!65!black}
-\colorlet{watercol}{blue!80!cyan!10!white}
-\colorlet{darkwatercol}{blue!80!cyan!20!white}
-\tikzstyle{piston}=[blue!50!black,top color=blue!30,bottom color=blue!50,middle color=blue!20,shading angle=0]
-\tikzstyle{water}=[draw=mydarkblue,top color=watercol!90,bottom color=watercol!90!black,shading angle=5]
-\tikzstyle{vertical water}=[water,
-top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=watercol!80,shading angle=90]
-\def\tick#1#2{\draw[thick] (#1)++(#2:0.1) --++ (#2-180:0.2)}
-
-
 
 
 % ====== DEADLINE SETUP ======
@@ -329,49 +225,21 @@ top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=wa
 }
 
 
-
-\definecolor{mygreen}{HTML}{07a56d}
-
-\newtcbtheorem{briefillus}{Definiton}{
-	enhanced,
-	sharp corners,
-	attach boxed title to top left={
-		xshift=0pt, 
-		yshift=-\tcboxedtitleheight, 
-		yshifttext=-\tcboxedtitleheight/2-0.5em
-	},
-	colback=white,
-	colframe=black,
-	fonttitle=\bfseries,
-	coltitle=white,
-	boxed title style={
-		rounded corners,
-		arc=2pt,
-		size=small,
-		colback=black,
-		colframe=black,
-	},
-	leftrule=0pt, 
-	rightrule=0pt, 
-}{thm}
-
-
-
 \usepackage{titlesec}
 
 
-\renewcommand{\thechapter}{\bfseries\Alph{chapter}} 
-\renewcommand{\chaptername}{\bfseries Part} 
+%\renewcommand{\thechapter}{\bfseries\Alph{chapter}} 
+%\renewcommand{\chaptername}{\bfseries Part} 
 
 \titleformat{\chapter}[block]{\Huge\raggedright}{\chaptername\;\thechapter\\[0.5em]}{0pt}{\Huge\raggedright}
 
 \renewcommand{\thesection}{\arabic{section}.}
 \renewcommand{\thesubsection}{\thesection\arabic{subsection}}
-\renewcommand{\thesubsubsection}{.\thesubsection\arabic{subsubsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
-\titleformat{\section}[block]{\Large\bfseries\raggedright}{\thesection}{0.5em}{}
-\titleformat{\subsection}[block]{\large\raggedright}{\thesubsection}{0.5em}{}
-\titleformat{\subsubsection}[block]{\bfseries\raggedright}{\thesubsubsection}{0.5em}{}
+\titleformat{\section}[block]{\large\bfseries\raggedright}{\thesection}{0.5em}{}
+\titleformat{\subsection}[block]{\raggedright}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}[block]{\raggedright}{\thesubsubsection}{0.5em}{}
 
 
 
@@ -382,9 +250,11 @@ top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=wa
 
 
 \begin{document}
+\tikzexternaldisable
+
 	\thispagestyle{empty}
 	\centering
-	\huge
+	\Huge
 	Conceptual frame for a large-scale electrolyser vessel\\[0.8em]
 	\normalsize %\textit{Application for aiding vertical motion}\\	
 \large
@@ -418,20 +288,17 @@ Electrolysers play a critical role in industrial hydrogen production, requiring 
 This project focuses on developing an assembly and maintenance frame for Supercritical Solutions’ electrolyser vessel, applying {systems thinking} and the {DMAIC methodology}. Stakeholder and customer requirements are captured using {VoC} and {OTD}, while design evaluation uses tools such as {QFD} and concept trade-off analysis. Risk assessment via {DFMEA} and quality planning ensure compliance with technical, operational, and sustainability standards.\\[0.8em]
 The report outlines project methodology, key engineering decisions, and rationale behind the chosen solution, highlighting professional skills developed including {project management}, {teamwork}, {critical thinking}, and {problem-solving}.
 
-\newpage
-
-\color{red!50!black}
-\begin{itemize}[itemsep=-1mm]
-	\item \textbf{Customer and Stakeholder Requirements}: List functional requirements (load support, accessibility, safety, ergonomics) using \textbf{VoC}.
-	\item \textbf{Project Objectives}: Include \textbf{OTD} showing link from high-level goals to design targets.
-	\item \textbf{Constraints and Specifications}: Material, dimensional, regulatory, cost, and sustainability requirements.
-\end{itemize}
-\color{black}
+%\begin{itemize}[itemsep=-1mm]
+%	\item \textbf{Customer and Stakeholder Requirements}: List functional requirements (load support, accessibility, safety, ergonomics) using \textbf{VoC}.
+%	\item \textbf{Project Objectives}: Include \textbf{OTD} showing link from high-level goals to design targets.
+%	\item \textbf{Constraints and Specifications}: Material, dimensional, regulatory, cost, and sustainability requirements.
+%\end{itemize}
 
 \section{Define (D)}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}[t]{0.5\textwidth}\vspace{-1.2em}\hspace{-1em}
+	\tikzexternalenable
 	\begin{tikzpicture}[
-		scale=0.75,
+		scale=0.95,
 		every node/.append style={transform shape},    
 		myarrow/.style={-{Stealth[length=1.5mm,width=2mm]}}]
 		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (source) at (0,0) {Source\\Document};
@@ -439,82 +306,135 @@ The report outlines project methodology, key engineering decisions, and rational
 		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (req) at (0,-6.6) {Requirements};
 		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (final) at (-3.7,-4.5) {Canonical\\Problem};
 		\node[draw, circle, minimum size=2cm, align=center, scale=0.8] (voc) at (3.7,-4.5) {VoC};
-		\draw[myarrow] (source) -- (problem);
-		\draw[myarrow] (problem) -- (req);
+		\draw[myarrow,blue] (source) -- (problem);
+		\draw[myarrow,green] (problem) -- (req);
 		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize] at (0,-4.6) {Intrinsic};
-		\draw[myarrow] (source) .. controls (-2,-2) and (-1.5,-4) .. (req);
+		\draw[myarrow,blue] (source) .. controls (-2,-2) and (-1.5,-4) .. (req);
 		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize,xshift=17pt] at (-2,-2) {Explicit};
-		\draw[myarrow] (problem) .. controls (-1.5,-2.9) and (-2.4,-3.2) .. (final);
-		\draw[myarrow] (req) .. controls (-1.8,-6.3) and (-2.6,-5.6) .. (final);
-		\draw[myarrow] (voc) .. controls (2.8,-3.5) and (1.7,-3) .. (problem);
+		\draw[myarrow,red] (problem) .. controls (-1.5,-2.9) and (-2.4,-3.2) .. (final);
+		\draw[myarrow,red] (req) .. controls (-1.8,-6.3) and (-2.6,-5.6) .. (final);
+		\draw[myarrow,orange] (voc) .. controls (2.8,-3.5) and (1.7,-3) .. (problem);
 		\node[fill=white, draw=white, line width=3pt, inner sep=1pt, rounded corners=2pt, font=\footnotesize] at (2.2,-3.3) {Validation};
-		\draw[myarrow] (voc) .. controls (3,-5.8) and (2,-6.6) .. (req);
+		\draw[myarrow,orange] (voc) .. controls (3,-5.8) and (2,-6.6) .. (req);
 		\node[fill=white, draw=white, line width=3pt, inner sep=1pt,
 		rounded corners=2pt, font=\footnotesize, align=center]
 		at (2.5,-6) {Supplement \&\\Reinforce};
 	\end{tikzpicture}\\
-	\parbox[t][10pt][t]{\linewidth}{%
-		\vspace{0em}
-		\captionof{figure}{Define Phase Workflow: From Source to Canonical Problem}%
-	}
+	\tikzexternaldisable
+	\begin{minipage}{0.9\linewidth}
+		\vspace{2em}
+		\captionof{figure}{\centering Define Phase Workflow\\ From Source to Canonical Problem}
+	\end{minipage}
 \end{minipage}\hfill
-\begin{minipage}{0.57\textwidth}
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace*{-1em}
 	\subsection{Approach Overview}
-	This Define phase establishes a clear and validated understanding of the problem by consolidating information from the Initial Industry Brief, Voice of the Customer (VoC), and stakeholder inputs. Our approach follows a structured path:\\[0.1em]
-	\begin{itemize}[itemsep=1mm]
+	This Define phase establishes a clear and validated understanding of the problem by consolidating information from the Initial Industry Brief, Voice of the Customer (VoC), and stakeholder inputs. Our approach follows a structured path:\\[-0.3em]
+	\begin{itemize}[itemsep=2mm]
 		\item Extract key information from the Industry Live Brief to identify preliminary problems.
 		\item Validate and refine these problems and requirements through VoC feedback.
 		\item Translate validated insights into measurable requirements and objectives.
 		\item Define material, dimensional, and regulatory constraints to ground the design in feasibility.
-	\end{itemize}\vspace{1em}
-	By combining insights from source documents, VoC feedback, and iterative refinement, we ensure that the problem definition is both grounded in reality and rigorously specified.
-\end{minipage}\\[1em]
- This integration of intrinsic context, explicit formulation, validation, and reinforcement leads to a canonical problem that clearly defines requirements, objectives, and constraints, providing a solid foundation for the next phases of concept development and evaluation.\\[2em]
-\hrule\vspace{0.3em}
+	\end{itemize}\vspace{1.2em}
+By integrating information from source documents, VoC feedback, and iterative analysis, the problem definition is anchored in reality and precisely specified.\\[0.8em]
+This combination of context, explicit formulation, and validation produces a well-defined problem statement that clearly identifies requirements, objectives, and constraints, establishing a solid foundation for subsequent concept development and evaluation.
+\end{minipage}
 
+\newpage
+
+\thispagestyle{plain}
 \subsection{Industry Live Brief Breakdown}
 \begin{minipage}{0.58\textwidth}
-Our initial source document is the live brief provided by \textbf{Supercritical Solutions Ltd}, which defines the project as:\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
-	Designing an assembly and maintenance frame for Supercritical’s large-scale electrolyser vessel.
-\end{formal}
-This statement establishes the project’s core intent — to create a support and handling system for a critical industrial component. Implicit within this is the need for mechanical stability, safety in operation, and consideration of human and environmental factors.
+Our initial source document is the live brief provided by {Supercritical Solutions Ltd}, which defines the project title as:\\[-0.6em]
 \begin{formal}[Zaarour, 2025, p. 1]{black}{white}
-	This project focuses on developing a conceptual assembly and maintenance frame for a large-scale electrolyser module. The outer vessel houses several internal sub-units (“black boxes”), designed for efficient replacement, inspection, and servicing.
-\end{formal}
+\textit{	Designing an assembly and maintenance frame for Supercritical’s large-scale electrolyser vessel.}
+\end{formal}\\[-1.8em]
+The title establishes the project’s core intent to \textbf{design} a frame for assembly and maintenance of a critical industrial component; The synopsis of the brief begins as follows:\\[-0.6em]
+\begin{formal}[Zaarour, 2025, p. 1]{black}{white}
+\textit{	This project focuses on developing a conceptual assembly and maintenance frame for a large-scale electrolyser module. The outer vessel houses several internal sub-units (“black boxes”), designed for efficient replacement, inspection, and servicing.}
+\end{formal}\\[-1.8em]
+This highlights the project’s \textbf{conceptual} phase, emphasizing design intent over production. It introduces a vessel-based system containing modular internal units, indicating that serviceability, accessibility, and efficient replacement are key design priorities.\\[1em]
 \end{minipage}\hfill
 \begin{minipage}{0.4\textwidth}
-    \includegraphics[width=0.9\linewidth, trim=10pt 5pt 10pt 5pt, clip]{../../../Pictures/Screenshots/swappy-20251019-211642}
+    \includegraphics[width=0.85\linewidth, trim=10pt 5pt 10pt 5pt, clip]{../../../Pictures/Screenshots/swappy-20251019-211642}
     \captionof{figure}{Zaarour, 2025, p.1,2}
-\end{minipage}\\[1em]
-This section of the brief introduces the system’s architecture, a primary vessel containing replaceable “black box” modules. From this, it becomes clear that modularity and maintainability are central design requirements. The frame must therefore facilitate the lifting, positioning, and removal of these sub-units without damaging components or disrupting alignment.
+\end{minipage}\\\vspace{-0.6em}
 \begin{formal}[Zaarour, 2025, p. 1]{black}{white}
-	At a high level, the process involves securing the vessel, lifting and positioning the internal units, and enabling disassembly without compromising safety, alignment, or component integrity. A conceptual frame will be proposed to support this process.
+\textit{	At a high level, the process involves securing the vessel, lifting and positioning the internal units, and enabling disassembly without compromising safety, alignment, or component integrity. A conceptual frame will be proposed to support this process.}
 \end{formal}
-Here, the operational workflow is defined. The frame must perform under heavy loads, maintain precise alignment, and allow repeatable assembly and disassembly. This introduces key engineering considerations such as load path design, lifting safety, and tolerance management. It also frames the system as one that supports \textbf{both assembly and maintenance}, implying a dual-purpose design philosophy.
+Here, the operational workflow is defined. The frame must perform under heavy loads, maintain precise alignment, and allow repeatable assembly and disassembly. This introduces key engineering considerations such as load path design, lifting safety, and tolerance management. It also frames the system as one that supports {both assembly and maintenance}, implying a dual-purpose design philosophy.\\[1em]
 \begin{formal}[Zaarour, 2025, p. 1]{black}{white}
-	The frame design prioritises \textit{ergonomics}, ensuring operators can safely access and manipulate heavy components while reducing manual strain. Safety features, such as interlocks and shielding, will mitigate risks during lifting and positioning. Automation elements—like guided lifting systems or robotic assistance—will improve repeatability, reduce error, and shorten turnaround time during both assembly and maintenance cycles.
+\textit{	The frame design prioritises {ergonomics}, ensuring operators can safely access and manipulate heavy components while reducing manual strain. Safety features, such as interlocks and shielding, will mitigate risks during lifting and positioning. Automation elements—like guided lifting systems or robotic assistance—will improve repeatability, reduce error, and shorten turnaround time during both assembly and maintenance cycles.}
 \end{formal}
-This passage adds a human and process-oriented layer. The focus shifts from mechanical function to \textbf{operator safety, efficiency, and automation}. Ergonomics becomes a measurable design driver, suggesting the integration of human factors engineering. Automation hints at the use of advanced control systems or assistive mechanisms, raising new requirements for precision, reliability, and system integration.
-\begin{formal}[Zaarour, 2025, p. 2]{black}{white}
-	The project plan will include mapping of assembly/disassembly workflows, conceptual frame design, and an evaluation of tooling requirements. Risks to address include component misalignment, equipment handling hazards, and delays from non-standardised interfaces. Quality considerations will centre on ensuring precision fits, traceability of maintenance activities, and robustness of the rig to repeated use.
-\end{formal}
-This section formalises the project management expectations. It highlights risk-based thinking and introduces the need for workflow mapping — key aspects of the DMAIC and systems engineering approaches. The emphasis on quality, traceability, and standardisation implies that the solution must not only perform mechanically but also fit within broader operational and maintenance systems.
+This passage adds a human and process-oriented layer. The focus shifts from mechanical function to {operator safety, efficiency, and automation}. \textbf{Ergonomics} becomes a measurable design driver, suggesting the integration of human factors engineering. Automation hints at the use of advanced control systems or assistive mechanisms, raising new requirements for precision, reliability, and system integration.
 
 \begin{formal}[Zaarour, 2025, p. 2]{black}{white}
-	The outer vessel measures 870 mm internal diameter × 3000 mm internal height (1100 mm OD × 3500 mm total height) and weighs 13 tons. Housed within the vessel are internal sub-units, collectively forming a “black box” assembly measuring 550 × 550 × 2000 mm in height, with a combined weight of 3 tons. These sub-units are attached to the vessel lid, and must be safely lifted, positioned, and removed during assembly and maintenance cycles.
+\textit{	The project plan will include mapping of assembly/disassembly workflows, conceptual frame design, and an evaluation of tooling requirements. Risks to address include component misalignment, equipment handling hazards, and delays from non-standardised interfaces. Quality considerations will centre on ensuring precision fits, traceability of maintenance activities, and robustness of the rig to repeated use.}
 \end{formal}
-
-Finally, this portion of the brief defines the scale of the engineering problem. The component weights and dimensions directly inform material selection, structural design, and lifting mechanism specifications. It establishes performance baselines that shape load calculations, safety factors, and ergonomics constraints.
-
-\subsection{Summary}
-The live brief progressively defines both the technical and managerial scope of the project. It begins with the conceptual aim, introduces the modular system context, and culminates in quantifiable design constraints. From this breakdown, several key themes emerge:
+This formalises the project management expectations. It highlights risk-based thinking and introduces the need for workflow mapping — key aspects of the DMAIC and systems engineering approaches. The emphasis on quality, traceability, and standardisation implies that the solution must not only perform mechanically but also fit within broader operational and maintenance systems.\\[1em]
+%\item The solution must be \textbf{modular and reusable}, not a single-use fixture.
+\begin{formal}[Zaarour, 2025, p. 2]{black}{white}
+\textit{	The outer vessel measures 870 mm internal diameter × 3000 mm internal height (1100 mm OD × 3500 mm total height) and weighs 13 tons. Housed within the vessel are internal sub-units, collectively forming a “black box” assembly measuring 550 × 550 × 2000 mm in height, with a combined weight of 3 tons. These sub-units are attached to the vessel lid, and must be safely lifted, positioned, and removed during assembly and maintenance cycles.}
+\end{formal}
+The scale of the engineering problem is defined by the physical constraints of the system. The vessel's significant height (~3m) and limited internal clearance are compounded by the sizable sub-units (2000mm, 3 tons) attached to the lid. This configuration presents a critical handling challenge: ensuring the precise, sway-free vertical translation of the sub-units to avoid contact with the vessel walls. With interaction limited solely to the lid, the problem is one of extreme spatial restriction. The following client questions (VoC) have been id	entified:
+\begin{formalt}[]{blue}{blue!5!white}
+\begin{quote}
+	"Can we assume that no modifications or attachments are allowed on the vessel or the internal components?\\[0.2em]
+	\small\hspace{4em}- If not (we are allowed), are there preferred methods or restrictions for supporting the sub-units from the lid?\\ \normalsize and are there any additional operational constraints that haven't been outlined?"
+\end{quote}
+\end{formalt}
+	
+\begin{formal}[Zaarour, 2025, p. 2]{black}{white}
+\textit{Consider vertical vs horizontal assembly/maintenance option. 
 \begin{itemize}[itemsep=-1mm]
-	\item \textbf{Structural integrity and precision} are critical due to the vessel’s mass and geometry.
-	\item \textbf{Ergonomics and safety} drive accessibility and risk mitigation.
-	\item \textbf{Automation and repeatability} offer opportunities for process efficiency.
-	\item \textbf{Quality and traceability} link design to long-term maintainability.	
-\end{itemize}
-Together, these insights establish a foundation for the project’s structured DMAIC approach, ensuring that design, risk, and quality objectives align with the industrial requirements outlined by Supercritical Solutions.
+	\item \textbf{Vertical assembly:} Relies on sufficient clearance and workshop ceiling heights.
+	\item \textbf{Horizontal assembly:} Involves assembling internal sub-units on a cradle or skid, using restraints to safely move the parts into the vessel and provide stability during the rotation operation to reach the final vertical assembly.
+\end{itemize}}
+\end{formal}
+The use of the term \textbf{consider} indicates that the brief leaves the choice of assembly orientation open.
+If vertical assembly is chosen, it remains unclear what the maximum allowable ceiling height and workspace constraints are, yes that is true, but by logic, the ceiling must be at least: 
+
+\begin{enumerate}[label=\arabic*)]
+	\item The height of the vessel itself.
+	\item The height of the internal sub-units attached to the vessel lid so that it would be about to be taken out.
+\end{enumerate}
+
+Both conditions must be satisfied for vertical assembly to be feasible, so the frame would be built around those being true.  
+
+For horizontal assembly, questions arise regarding the method for stabilizing the sub-units during rotation, acceptable tolerances for positioning, and whether specific tools or fixtures are required. For this scenario to be viable, the “black box” components would need to be supported to prevent sagging for the chance that it exists since the horizontal nature introduces this, however, if the components are held inside the vessel for stabilization, the steps for removal and insertion become unclear, making the workflow and visualization of the assembly process more ambiguous.\\[0.7em]
+These observations prompt questions for the client such as: 
+\begin{formalt}[]{blue}{blue!5!white}
+	\begin{quote}
+		“Do we select a single assembly orientation and neglect the other, or must both be accommodated? Are the mechanisms for vertical and horizontal assembly interchangeable, or do they require separate designs? How does this choice influence prioritisation and design approach?”
+	\end{quote}
+\end{formalt}
+Areas where direct input from the client would clarify design requirements, reduce ambiguity, and ensure that the chosen approach is feasible and well-defined.
+\subsection{OTD}
+
+\newpage
+
+\subsection{Summary and Interpretations (Draft)}
+%The live brief defines the project’s conceptual aim: designing a frame to enable assembly and maintenance of a large-scale electrolyser vessel and its internal sub-units. From this, the core engineering problem can be interpreted as creating a physical system that allows safe, repeatable handling of the internal modules without compromising alignment, safety, or component integrity.  
+%
+%\textbf{Key Project Requirements:}
+%\begin{itemize}[itemsep=-1mm]
+%	\item \textbf{Vessel support:} Stabilize the vessel (870 mm ID × 3000 mm height, 13 tons) while allowing safe access.
+%	\item \textbf{Sub-unit handling:} Lift, position, and remove internal “black box” modules (550 × 550 × 2000 mm, 3 tons) with precision.
+%	\item \textbf{Operator access and ergonomics:} Ensure safe manipulation of heavy components.
+%	\item \textbf{Alignment and repeatability:} Maintain precise positioning during insertion/removal.
+%	\item \textbf{Safety features:} Protect against collisions or accidents during handling.
+%	\item \textbf{Workflow integration:} Support standardized assembly and maintenance procedures.
+%\end{itemize}
+%
+%This interpretation frames the system as a \textbf{dual-purpose assembly and maintenance frame}, guiding the creation of: 
+%
+%\begin{itemize}[itemsep=-1mm]
+%	\item Preliminary conceptual layouts showing the frame’s interaction with the vessel and sub-units.
+%	\item Tables of inputs (weights, dimensions, forces, operator interactions) and outputs (movement paths, supported loads, safety clearances, workflow steps).
+%	\item Identification of key mechanical, ergonomic, and operational constraints for the early design stage.
+%\end{itemize}
+
+
 
 
 

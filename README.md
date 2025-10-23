@@ -13,7 +13,7 @@ project_management/
 ├── companies/Supercritical/     # Project brief and deliverables
 │   ├── Assembly and Maintenance Frame.md
 │   └── Supercritical.pdf
-├── meetings/                     # Meeting notes and scripts
+├── meetings/                     # Meeting notes and audios
 ├── research/                     # Poster presentation and outlines
 ├── referance docuemnts/          # Module and assignment guidelines
 ├── Module Summary.md             # Overview of the module
