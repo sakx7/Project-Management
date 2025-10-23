@@ -15,6 +15,9 @@ Excalidraw/
 *.out
 *.synctex.gz
 *.toc
+*.auxlock
+*.md5
+*.dpth
 
 # elvn
 *.html
